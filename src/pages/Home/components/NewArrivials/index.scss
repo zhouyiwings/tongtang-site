@@ -1,0 +1,38 @@
+
+.newArrivalImage, .newArrivalTextShader {
+    transition: all .5s ease-in-out;
+}
+
+.mainText {
+    margin-top: 25px !important;
+    margin-bottom: 16px !important;
+}
+.secondaryText {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.newArrivalTextShader {
+    box-sizing: border-box;
+    padding: 0 64px;
+}
+
+.newArrivalBox {
+    &:hover {
+        cursor: pointer;
+        & .newArrivalImage {
+            transform: scale(1.2);
+        }
+
+        & .newArrivalTextShader {
+            height: 178px;
+        }
+
+        & .secondaryText {
+            top: 0;
+            opacity: 1;
+        }
+    }
+}

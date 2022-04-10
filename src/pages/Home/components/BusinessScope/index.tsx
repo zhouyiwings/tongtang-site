@@ -28,7 +28,7 @@ function BusinessScope() {
                 }}
             >
                 <Box className="title">
-                    <img src="/home/business_scope@2x.png" />
+                    <img src="/home/business_scope/business_scope@2x.png" />
                 </Box>
                 <Box
                     display="flex"
@@ -42,7 +42,7 @@ function BusinessScope() {
                         marginTop: "40px",
                         marginBottom: "50px",
                     }}>
-                    <TitleBox background="/home/product_line@2x.png" />
+                    <TitleBox background="/home/business_scope/product_line@2x.png" />
                     <ContentBox
                         icon={R.strings.business_scope.contents.holiday_gift.icon}
                         mainText={R.strings.business_scope.contents.holiday_gift.mainText}
@@ -86,7 +86,7 @@ function BusinessScope() {
                         icon={R.strings.business_scope.contents.warehouse_service.icon}
                         mainText={R.strings.business_scope.contents.warehouse_service.mainText}
                     />
-                    <TitleBox background="/home/service_line@2x.png" />
+                    <TitleBox background="/home/business_scope/service_line@2x.png" />
                 </Box>
             </Box>
         </Box>
