@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import { useEffect } from "react";
-import Animation1 from "./components/Animation1";
+import Animation1 from "./components/Animation";
+import BusinessScope from "./components/BusinessScope";
 
 import "./Home.scss";
 
@@ -32,6 +32,7 @@ function Home() {
                 <img src="./home/slogan@2x.png" />
             </Box>
             <Animation1 />
+            <BusinessScope />
         </Box>
     )
 }

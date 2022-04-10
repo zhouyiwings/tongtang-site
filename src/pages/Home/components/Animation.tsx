@@ -33,7 +33,7 @@ function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0, 1920, 1920 * canvas.height / canvas.width); 
 }
-function Animation1() {
+function Animation() {
     useEffect(() => {
         gsap.to("#scrolling_animation", {
             backgroundPosition: (-scrollingAnimationOffset * scrollingAnimationFrameCount) + "px 50%",
@@ -75,9 +75,8 @@ function Animation1() {
     }, []);
 
     useEffect(() => {
-        gsap.to("#slogan", {
-            marginTop: "-100px",
-            marginBottom: "100px",
+        gsap.to("#slogan img", {
+            top: "-200px",
             opacity: 0,
             scrollTrigger: {
                 scroller: "body",
@@ -87,16 +86,6 @@ function Animation1() {
                 scrub: true,
             },
         });
-        gsap.to(".animationWrapper", {
-            marginTop: "-200px",
-            scrollTrigger: {
-                scroller: "body",
-                trigger: "#section1",
-                start: "top top",
-                end: `+=${1920}`,
-                scrub: true,
-            },
-        })
     }, [])
 
     return (
@@ -117,4 +106,4 @@ function Animation1() {
     )
 };
 
-export default Animation1;
+export default Animation;

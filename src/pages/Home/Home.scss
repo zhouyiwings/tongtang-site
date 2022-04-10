@@ -6,12 +6,17 @@
     height: 1000px;
     z-index: 10;
 }
+#slogan img {
+    position: relative;
+}
 
 #scrolling_animation {
     width: 1920px;
     height: 1080px;
+    margin-top: -80px;
     background-image: url(/resources/animation2_imgs/pictures.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 50%;
+    margin-bottom: 160px;
 }

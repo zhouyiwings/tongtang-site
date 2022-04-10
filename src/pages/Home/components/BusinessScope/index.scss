@@ -1,0 +1,12 @@
+.contentBox {
+    &:hover {
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            background-color: #FE7328;
+            content: ' ',
+        }
+    }
+}
