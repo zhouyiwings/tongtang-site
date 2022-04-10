@@ -1,0 +1,17 @@
+.animationWrapper {
+    margin-top: -400px;
+}
+#static_animation {
+    width: 1920px;
+    height: 1000px;
+    z-index: 10;
+}
+
+#scrolling_animation {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(/resources/animation2_imgs/pictures.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}

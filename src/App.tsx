@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Router, Switch} from "react-router-dom";
+import './App.scss';
+import { createBrowserHistory } from 'history';
 
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Cases from "./pages/Cases";
+import AboutUs from "./pages/AboutUs";
+import Join from "./pages/Join";
+import { ABOUT_US, CASES, HOME, JOIN } from "./constants/urls";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const history = createBrowserHistory();
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#FF4713",
+      light: "#FF7005",
+    },
+  },
+});
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router history={history}>
+        <Header />
+        <Switch>
+          <Route path={HOME} component={Home} exact />
+          <Route path={CASES} component={Cases} exact />
+          <Route path={ABOUT_US} component={AboutUs} exact />
+          <Route path={JOIN} component={Join} exact />
+        </Switch>
+      </Router>
+    </ThemeProvider>
   );
 }
 
