@@ -3,6 +3,7 @@
 }
 #static_animation {
     width: 1920px;
+    max-width: 100%;
     z-index: 10;
 }
 #slogan img {
@@ -10,8 +11,10 @@
 }
 
 #scrolling_animation {
+    z-index: -1;
+    opacity: 0;
     width: 1920px;
-    height: 960px;
+    max-width: 100%;
     background-image: url(/resources/animation2_imgs/pictures.png);
     background-size: auto;
     background-repeat: no-repeat;

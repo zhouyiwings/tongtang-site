@@ -72,7 +72,7 @@ function Animation() {
                 scroller: "body",
                 trigger: "#section1",
                 start: "top top",
-                end: `+=${1920}`,
+                end: () => window.innerHeight,
                 pin: true,
                 scrub: true,
             },
@@ -101,7 +101,20 @@ function Animation() {
                 end: `+=${1}`,
                 scrub: true,
             },
-        })
+        });
+
+        gsap.to("#scrolling_animation", {
+            zIndex: 1,
+            opacity: 1,
+            duration: 0.1,
+            scrollTrigger: {
+                scroller: "body",
+                trigger: "#section1",
+                start: "top top",
+                end: `+=${1}`,
+                scrub: true,
+            },
+        });
     }, []);
 
     useEffect(() => {
