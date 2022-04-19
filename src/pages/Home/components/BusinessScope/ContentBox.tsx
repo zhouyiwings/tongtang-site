@@ -6,12 +6,14 @@ interface IContentBoxProps {
     icon: string;
     mainText: string;
     secondaryText?: string;
+    id: string;
 }
 
 function ContentBox(props: IContentBoxProps) {
 
     return (
         <Box
+            id={props.id}
             display="flex"
             flexDirection="column"
             alignItems={"center"}
@@ -26,10 +28,7 @@ function ContentBox(props: IContentBoxProps) {
                 backgroundColor: "#fff",
                 boxSizing: "border-box",
                 borderLeft: "1px solid #EDEDED",
-                "&:hover": {
-                    cursor: "pointer",
-                    boxShadow: "0px 12px 18px -11px rgba(0, 0, 0, 0.32)",
-                }
+                opacity: 0,
             }}
         >
             <Box
