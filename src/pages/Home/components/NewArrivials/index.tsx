@@ -19,7 +19,7 @@ function NewArrivals() {
                 scroller: "body",
                 trigger: "#newArrivals",
                 scrub: true,
-                start: "top 60%",
+                start: "top 65%",
                 end: "+=200"
             },
         });
@@ -30,7 +30,7 @@ function NewArrivals() {
                 scroller: "body",
                 trigger: "#newArrivals",
                 scrub: true,
-                start: "top 55%",
+                start: "top 60%",
                 end: "+=200"
             },
         });
@@ -41,7 +41,7 @@ function NewArrivals() {
                 scroller: "body",
                 trigger: "#newArrivals",
                 scrub: true,
-                start: "top 50%",
+                start: "top 55%",
                 end: "+=200"
             },
         });
@@ -52,7 +52,7 @@ function NewArrivals() {
                 scroller: "body",
                 trigger: "#newArrivals",
                 scrub: true,
-                start: "top 50%",
+                start: "top 55%",
                 end: "+=200"
             },
         });
@@ -63,7 +63,7 @@ function NewArrivals() {
                 scroller: "body",
                 trigger: "#newArrivals",
                 scrub: true,
-                start: "top 45%",
+                start: "top 50%",
                 end: "+=200"
             },
         });
@@ -74,7 +74,7 @@ function NewArrivals() {
                 scroller: "body",
                 trigger: "#newArrivals",
                 scrub: true,
-                start: "top 45%",
+                start: "top 50%",
                 end: "+=200"
             },
         })
