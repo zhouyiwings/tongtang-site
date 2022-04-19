@@ -28,7 +28,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 59%",
+                start: "top 57%",
                 end: "+=200"
             },
         });
@@ -39,7 +39,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 56%",
+                start: "top 52%",
                 end: "+=200"
             },
         });
@@ -50,7 +50,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 53%",
+                start: "top 47%",
                 end: "+=200"
             },
         });
@@ -61,7 +61,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 50%",
+                start: "top 42%",
                 end: "+=200"
             },
         });
@@ -72,7 +72,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 53%",
+                start: "top 47%",
                 end: "+=200"
             },
         });
@@ -83,7 +83,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 50%",
+                start: "top 42%",
                 end: "+=200"
             },
         });
@@ -94,7 +94,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 47%",
+                start: "top 37%",
                 end: "+=200"
             },
         });
@@ -105,7 +105,7 @@ function BusinessScope() {
                 scroller: "body",
                 trigger: "#businessScope",
                 scrub: true,
-                start: "top 44%",
+                start: "top 32%",
                 end: "+=200"
             },
         });
