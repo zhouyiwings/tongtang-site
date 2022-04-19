@@ -77,20 +77,6 @@ function Animation() {
                 scrub: true,
             },
         });
-        /*
-        gsap.to("#scrolling_animation", {
-            backgroundPosition: (-scrollingAnimationOffset * scrollingAnimationFrameCount) + "px 50%",
-            ease: `steps(${scrollingAnimationFrameCount})`,
-            scrollTrigger: {
-                scroller: "body",
-                trigger: "#section1",
-                start: "top top",
-                end: `+=${1920}`,
-                pin: true,
-                scrub: true,
-            },
-        });
-        */
     }, []);
 
     useEffect(() => {

@@ -13,9 +13,11 @@ function BusinessScope() {
             alignItems="center"
             sx={{
                 width: "100%",
-                height: "1005px",
                 padding: "101px 0",
                 backgroundColor: "#F5F5F5",
+                scrollSnapAlign: "start",
+                height: "100vh",
+                boxSizing: "border-box",
             }}
         >
             <Box

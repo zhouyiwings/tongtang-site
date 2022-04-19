@@ -3,3 +3,7 @@ html, #root, body {
   display: flex;
   flex-direction: column;
 }
+
+body {
+  overflow-x: hidden;
+}

@@ -11,9 +11,11 @@ function NewArrivals() {
         <Box
             sx={{
                 width: "100vw",
-                height: "1000px",
+                height: "100vh",
+                boxSizing: "border-box",
                 position: "relative",
                 backgroundColor: "#fff",
+                scrollSnapAlign: "start",
             }}
         >
             <Box
