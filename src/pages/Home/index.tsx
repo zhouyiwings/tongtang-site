@@ -38,6 +38,30 @@ function Home() {
                     <img src="./home/slogan@2x.png" />
                 </Box>
                 <Animation1 />
+                <Box
+                    display="flex"
+                    flexDirection="row"
+                    alignItems="center"
+                    justifyContent="center"
+                    id="slogan2"
+                    sx={{
+                        position: "relative",
+                        height: "340px",
+                        width: "1324px",
+                        maxWidth: "100%",
+                        zIndex: 9999,
+                        opacity: 0,
+                        bottom: "90px",
+                        alignSelf: "center",
+                        justifySelf: "center",
+                        top: "-200px",
+                        "& img": {
+                            height: "100%",
+                            maxWidth: "100%"
+                        }
+                    }}>
+                    <img src="./home/slogan2@2x.png" />
+                </Box>
             </Box>
             <BusinessScope />
             <NewArrivals />

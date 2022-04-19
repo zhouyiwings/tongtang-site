@@ -129,6 +129,17 @@ function Animation() {
                 scrub: true,
             },
         });
+        gsap.to("#slogan2", {
+            top: "-600px",
+            opacity: 1,
+            scrollTrigger: {
+                scroller: "body",
+                trigger: "#section1",
+                start: "top top",
+                end: `+=${1920}`,
+                scrub: true,
+            },
+        });
     }, [])
 
     return (
