@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Join from "./pages/Join";
 import { ABOUT_US, CASES, HOME, JOIN } from "./constants/urls";
 import { createTheme, ThemeProvider } from "@mui/material";
+import Footer from "./components/Footer";
 
 const history = createBrowserHistory();
 

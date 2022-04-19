@@ -11,6 +11,9 @@ const staticAnimationFrameCount = 30;
 const currentStaticAnimationFrame = (index: number) => (
     `/animation1_imgs/1_000${index < 10 ? `0${index}` : index}.jpg`
 );
+const currentScrollingAnimationFrame = (index: number) => (
+    `/animation2_imgs/1_000${index < 10 ? `0${index}` : index}.jpg`
+);
 
 const staticAnimationImages: any[] = [];
 const staticAnimation = {
@@ -23,6 +26,17 @@ for (let i = 1; i <= staticAnimationFrameCount; i++) {
     staticAnimationImages.push(img);
 }
 
+const scrollingAnimationImages: any[] = [];
+const scrollingAnimation = {
+    frame: 0,
+}
+
+for (let i = 1; i <= scrollingAnimationFrameCount; i++) {
+    const img = new Image();
+    img.src = currentScrollingAnimationFrame(i);
+    scrollingAnimationImages.push(img);
+}
+
 function render() {
     const canvas = document.getElementById("static_animation") as any;
     const context = canvas.getContext("2d");
@@ -33,8 +47,37 @@ function render() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0, 1920, 1920 * canvas.height / canvas.width); 
 }
+
+function scrollingRender() {
+    const canvas = document.getElementById("scrolling_animation") as any;
+    const context = canvas.getContext("2d");
+
+    const img = scrollingAnimationImages[scrollingAnimation.frame] as any;
+    canvas.height = img.naturalHeight;
+    canvas.width = img.naturalWidth;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(img, 0, 0, 1920, 1920 * canvas.height / canvas.width); 
+
+}
 function Animation() {
     useEffect(() => {
+        scrollingAnimationImages[0].onload = scrollingRender;
+
+        gsap.to(scrollingAnimation, {
+            frame: scrollingAnimationFrameCount - 1,
+            snap: "frame",
+            ease: "none",
+            onUpdate: scrollingRender,
+            scrollTrigger: {
+                scroller: "body",
+                trigger: "#section1",
+                start: "top top",
+                end: `+=${1920}`,
+                pin: true,
+                scrub: true,
+            },
+        });
+        /*
         gsap.to("#scrolling_animation", {
             backgroundPosition: (-scrollingAnimationOffset * scrollingAnimationFrameCount) + "px 50%",
             ease: `steps(${scrollingAnimationFrameCount})`,
@@ -47,6 +90,7 @@ function Animation() {
                 scrub: true,
             },
         });
+        */
     }, []);
 
     useEffect(() => {
@@ -101,7 +145,7 @@ function Animation() {
             }}
         >
             <canvas id="static_animation" />
-            <div id="scrolling_animation"></div>
+            <canvas id="scrolling_animation" />
         </Box>
     )
 };
