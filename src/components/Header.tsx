@@ -59,12 +59,18 @@ function Header() {
                 value={tabValue}
                 sx={{
                     height: "100%",
-                    marginLeft: "190px",
+                    margin: "0 auto",
                     '.MuiTabs-indicator': {
                         top: 0,
                     },
                     '.MuiTabs-flexContainer': {
                         height: "100%",
+                    },
+                    '.MuiTab-root': {
+                        paddingLeft: 0,
+                        paddingRight: 0,
+                        minWidth: "unset",
+                        margin: "0 40px",
                     },
                     fontWeight: 500,
                 }}
@@ -85,7 +91,6 @@ function Header() {
                 variant="contained"
                 sx={{
                     backgroundColor: (theme: Theme) => theme.palette.primary.light,
-                    marginLeft: "auto",
                     width: "190px",
                     height: "80px",
                     color: "#fff",

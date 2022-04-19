@@ -125,7 +125,7 @@ function Animation() {
                 scroller: "body",
                 trigger: "#section1",
                 start: "top top",
-                end: `+=${1920}`,
+                end: () => window.innerHeight,
                 scrub: true,
             },
         });
@@ -136,7 +136,7 @@ function Animation() {
                 scroller: "body",
                 trigger: "#section1",
                 start: "top top",
-                end: `+=${1920}`,
+                end: () => window.innerHeight,
                 scrub: true,
             },
         });

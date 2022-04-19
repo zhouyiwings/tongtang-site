@@ -4,6 +4,7 @@ import ArrivalBox from "./ArrivalBox";
 import R from "../../../../resources/Namespace";
 
 import "./index.scss";
+import TongtangButton from "../../../../components/Button";
 
 function NewArrivals() {
 
@@ -65,17 +66,9 @@ function NewArrivals() {
                     >
                         <Typography fontSize={16} lineHeight="32px" color="#252525">{R.strings.new_arrivals.description}</Typography>
                     </Box>
-                    <Button
-                        disableRipple
-                        disableElevation
-                        disableFocusRipple
-                        disableTouchRipple
-                        variant="outlined"
-                        sx={{
-                            width: "152px",
-                            height: "50px",
-                            color: (theme: Theme) => theme.palette.primary.light,
-                        }}>{R.strings.common.more_plus}</Button>
+                    <TongtangButton
+                        label={R.strings.common.more_plus}
+                    />
                 </Box>
             </Box>
         </Box>
