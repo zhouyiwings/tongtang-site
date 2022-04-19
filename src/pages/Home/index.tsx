@@ -39,6 +39,7 @@ function Home() {
                     }}>
                     <img src="./home/slogan@2x.png" />
                 </Box>
+                <Animation1 />
                 <Box
                     display="flex"
                     flexDirection="row"
