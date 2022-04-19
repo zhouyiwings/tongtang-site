@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const scrollingAnimationFrameCount = 79;
 const scrollingAnimationOffset = 1920;
-const staticAnimationFrameCount = 30;
+const staticAnimationFrameCount = 120;
 const currentStaticAnimationFrame = (index: number) => (
-    `/animation1_imgs/1_000${index < 10 ? `0${index}` : index}.jpg`
+    `/animation1_imgs/1_00${index < 10 ? `00${index}` : (index < 100 ? `0${index}` : index)}.jpg`
 );
 const currentScrollingAnimationFrame = (index: number) => (
     `/animation2_imgs/1_000${index < 10 ? `0${index}` : index}.jpg`
@@ -85,7 +85,7 @@ function Animation() {
             frame: staticAnimationFrameCount - 1,
             snap: "frame",
             ease: "none",
-            duration: 1,
+            duration: 4,
             onUpdate: render,
             repeat: -1,
         });
