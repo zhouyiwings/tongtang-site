@@ -51,6 +51,13 @@ const strings = {
             },
         }
     },
+    advantages: {
+        advantage1: "品类齐全",
+        advantage2: "设计赋能",
+        advantage3: "完美交付",
+        advantage4: "仓储售后",
+        advantage5: "数字化",
+    },
     new_arrivals: {
         description: "核心成员拥有10年以上供应链管理经验；设计团队多次荣获国际国内设计大奖，项目服务团队经过PMP美国项目中心务团队；设计团队多次荣设计团队多次荣核心成员拥有10年项目服务团队经过PMP美国项目中心务团队；设计团队多次荣设以上供应链管理经验；设计团队多次获奖。"
     }

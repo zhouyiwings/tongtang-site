@@ -2,6 +2,8 @@ import { Button, Theme } from "@mui/material";
 
 interface ITongtangButtonProps {
     label: string;
+    width?: string;
+    height?: string;
 }
 
 function TongtangButton(props: ITongtangButtonProps) {
@@ -13,8 +15,8 @@ function TongtangButton(props: ITongtangButtonProps) {
             disableTouchRipple
             variant="outlined"
             sx={{
-                width: "152px",
-                height: "50px",
+                width: props.width || "152px",
+                height: props.height || "50px",
                 border: "2px solid #FE7328",
                 borderRadius: "10px",
                 fontWeight: 500,

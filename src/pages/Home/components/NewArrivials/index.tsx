@@ -22,7 +22,7 @@ function NewArrivals() {
             <Box
                 sx={{
                     position: "absolute",
-                    bottom: "100px",
+                    top: "337px",
                     left: 0,
                     width: "1476px",
                     height: "563px",

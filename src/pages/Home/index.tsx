@@ -6,6 +6,7 @@ import Clients from "./components/Clients";
 
 import "./Home.scss";
 import Footer from "../../components/Footer";
+import Advantages from "./components/Advantages";
 
 function Home() {
 
@@ -38,7 +39,6 @@ function Home() {
                     }}>
                     <img src="./home/slogan@2x.png" />
                 </Box>
-                <Animation1 />
                 <Box
                     display="flex"
                     flexDirection="row"
@@ -66,6 +66,7 @@ function Home() {
             </Box>
             <BusinessScope />
             <NewArrivals />
+            <Advantages />
             <Clients />
             <Footer />
         </Box>
