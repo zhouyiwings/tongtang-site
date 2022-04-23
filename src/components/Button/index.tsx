@@ -6,6 +6,7 @@ interface ITongtangButtonProps {
     height?: string;
     opacity?: number;
     id?: string;
+    onClick?: () => void;
 }
 
 function TongtangButton(props: ITongtangButtonProps) {
@@ -17,6 +18,7 @@ function TongtangButton(props: ITongtangButtonProps) {
             disableFocusRipple
             disableTouchRipple
             variant="outlined"
+            onClick={props.onClick}
             sx={{
                 width: props.width || "152px",
                 height: props.height || "50px",

@@ -2,9 +2,15 @@ import { Box } from "@mui/system";
 import { useCallback, useState } from "react";
 import R from "../../../../resources/Namespace";
 import AccordionTab from "./AccordionTab";
+import DetailView from "./DetailView";
+
+import "./index.scss";
 
 function Advantages() {
     const [hovered, setHovered] = useState(0);
+    const [showDetail, setShowDetail] = useState(false);
+    const [initDetailView, setInitDetailView] = useState(0);
+    const [viewTotalImages, setViewTotalImages] = useState(0);
 
     const onMouseOverAccordion = useCallback((index: number) => {
         setHovered(index);
@@ -12,6 +18,32 @@ function Advantages() {
     const onMouseLeaveAccordion = useCallback((index: number) => {
         setHovered(0);
     }, []);
+
+    const showDetailView = useCallback((viewSection: number) => {
+        setShowDetail(true);
+        setInitDetailView(viewSection);
+        switch(viewSection) {
+            case 0:
+                setViewTotalImages(1);
+                return;
+            case 1:
+                setViewTotalImages(2);
+                return;
+            case 2:
+                setViewTotalImages(4);
+                return;
+            case 3:
+                setViewTotalImages(1);
+                return;
+            case 4:
+                setViewTotalImages(2);
+                return;
+        }
+    }, []);
+    const hideDetailView = useCallback(() => {
+        setShowDetail(false);
+    }, []);
+
     return (
         <Box
             display="flex"
@@ -59,6 +91,7 @@ function Advantages() {
                         onMouseOver={onMouseOverAccordion}
                         index={0}
                         backgroundImg="/home/advantages/bg1@2x.png"
+                        onClickMore={showDetailView}
                     />
                     <AccordionTab
                         label={R.strings.advantages.advantage2}
@@ -67,6 +100,7 @@ function Advantages() {
                         onMouseOver={onMouseOverAccordion}
                         index={1}
                         backgroundImg="/home/advantages/bg2@2x.png"
+                        onClickMore={showDetailView}
                     />
                     <AccordionTab
                         label={R.strings.advantages.advantage3}
@@ -75,6 +109,7 @@ function Advantages() {
                         onMouseOver={onMouseOverAccordion}
                         index={2}
                         backgroundImg="/home/advantages/bg3@2x.png"
+                        onClickMore={showDetailView}
                     />
                     <AccordionTab
                         label={R.strings.advantages.advantage4}
@@ -83,6 +118,7 @@ function Advantages() {
                         onMouseOver={onMouseOverAccordion}
                         index={3}
                         backgroundImg="/home/advantages/bg4@2x.png"
+                        onClickMore={showDetailView}
                     />
                     <AccordionTab
                         label={R.strings.advantages.advantage5}
@@ -91,9 +127,11 @@ function Advantages() {
                         onMouseOver={onMouseOverAccordion}
                         index={4}
                         backgroundImg="/home/advantages/bg5@2x.png"
+                        onClickMore={showDetailView}
                     />
                 </Box>
             </Box>
+            <DetailView show={showDetail} section={initDetailView} hideDetailView={hideDetailView} totalImages={viewTotalImages} />
         </Box>
     );
 }

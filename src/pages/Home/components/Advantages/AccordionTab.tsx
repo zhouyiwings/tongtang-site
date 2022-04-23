@@ -1,4 +1,5 @@
 import { Box } from "@mui/system";
+import { useCallback } from "react";
 import TongtangButton from "../../../../components/Button";
 import R from "../../../../resources/Namespace";
 
@@ -9,9 +10,12 @@ interface IAccordionTabProps {
     onMouseOver: (index: number) => void;
     onMouseLeave: (index: number) => void;
     label: string;
+    onClickMore: (index: number) => void;
 }
 function AccordionTab(props: IAccordionTabProps) {
-
+    const onClickMore = useCallback(() => {
+        props.onClickMore(props.index);
+    }, [props.onClickMore, props.index]);
     return (
         <Box
             component="li"
@@ -134,6 +138,7 @@ function AccordionTab(props: IAccordionTabProps) {
                     marginLeft: "auto",
                 }}>
                     <TongtangButton
+                        onClick={onClickMore}
                         label={R.strings.common.more_plus}
                     />
                 </Box>
