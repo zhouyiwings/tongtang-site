@@ -7,6 +7,7 @@ interface ITongtangButtonProps {
     opacity?: number;
     id?: string;
     onClick?: () => void;
+    filledBeDefault?: boolean;
 }
 
 function TongtangButton(props: ITongtangButtonProps) {
@@ -26,7 +27,8 @@ function TongtangButton(props: ITongtangButtonProps) {
                 borderRadius: "10px",
                 fontWeight: 500,
                 opacity: props.opacity !== undefined ? props.opacity : 1,
-                color: (theme: Theme) => theme.palette.primary.light,
+                color: (theme: Theme) => props.filledBeDefault ? "#fff" : theme.palette.primary.light,
+                backgroundColor: props.filledBeDefault ? "#FE7328" : undefined,
 
                 "&:hover": {
                     border: "2px solid #FE7328",
