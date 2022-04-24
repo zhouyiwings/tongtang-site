@@ -1,0 +1,30 @@
+.image {
+    height: 300px;
+    width: 412px;
+    margin-right: 32px;
+    flex: 0 0 auto;
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.images {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    animation: slideshow 90s linear infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes slideshow {
+    0%    { left: 0; }
+    100%  { left: -7992px; }
+}

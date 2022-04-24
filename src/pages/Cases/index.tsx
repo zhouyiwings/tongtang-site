@@ -1,6 +1,8 @@
 import { Box } from "@mui/material";
 import Footer from "../../components/Footer";
 import ClientWall from "./ClientWall";
+import CultureDerivative from "./CultureDerivative";
+import Reserve from "./Reserve";
 import Section1 from "./Section1";
 import WholeBox from "./WholeBox";
 
@@ -13,6 +15,8 @@ function Cases() {
         }}>
             <Section1 />
             <WholeBox />
+            <Reserve />
+            <CultureDerivative />
             <ClientWall />
             <Footer />
         </Box>
