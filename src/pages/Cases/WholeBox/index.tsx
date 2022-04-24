@@ -55,7 +55,6 @@ function WholeBox() {
                     sx={{
                         display: "flex",
                         flexDirection: "row",
-                        width: "100%",
                     }}
                 >
                     <Box

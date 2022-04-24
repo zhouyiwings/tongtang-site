@@ -66,8 +66,8 @@ function Box7(props: IBox7Props) {
                     paddingLeft="76px"
                     marginTop="342px"
                     height="387px"
-                    title={R.strings.cases.section1.whole_box.box7.title}
-                    items={R.strings.cases.section1.whole_box.box7.items}
+                    title={R.strings.cases.whole_box.box7.title}
+                    items={R.strings.cases.whole_box.box7.items}
                 />
                 <Box sx={{
                     flex: "1 1 380px"

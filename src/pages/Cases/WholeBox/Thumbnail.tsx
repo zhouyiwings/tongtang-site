@@ -59,7 +59,7 @@ function Thumbnail(props: IThumbnailProps) {
                         zIndex: 5,
                     }}
                 >
-                    {(R.strings.cases.section1.whole_box as any)[`box${props.index + 1}`].title}
+                    {(R.strings.cases.whole_box as any)[`box${props.index + 1}`].title}
                 </Typography>
                 <Box>
                     <TongtangButton

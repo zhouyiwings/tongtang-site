@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>老画新用点心礼盒-默认@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="案例" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1460.000000, -4089.000000)" id="文化周边">
+            <g transform="translate(0.000000, 3820.000000)">
+                <g id="老画新用点心礼盒" transform="translate(1280.000000, 237.000000)">
+                    <g transform="translate(180.000000, 26.000000)" id="icon">
+                        <g transform="translate(0.000000, 6.000000)">
+                            <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" x="2" y="1" width="42" height="42"></rect>
+                            <polygon id="路径" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="37.875 39.5 37.875 18.5 8.125 18.5 8.125 39.5"></polygon>
+                            <line x1="23" y1="39.5" x2="23" y2="18.5" id="路径" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <line x1="37.875" y1="39.5" x2="8.125" y2="39.5" id="路径" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+                            <rect id="矩形" stroke="#333333" stroke-width="2" stroke-linejoin="round" x="5.5" y="11.5" width="35" height="7"></rect>
+                            <polyline id="路径" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="16 4.5 23 11.5 30 4.5"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -66,8 +66,8 @@ function Box1(props: IBox1Props) {
                     paddingLeft="76px"
                     paddingTop="77px"
                     height="450px"
-                    title={R.strings.cases.section1.whole_box.box1.title}
-                    items={R.strings.cases.section1.whole_box.box1.items}
+                    title={R.strings.cases.whole_box.box1.title}
+                    items={R.strings.cases.whole_box.box1.items}
                 />
                 <Box sx={{
                     display: "flex",
