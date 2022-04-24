@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
 import { useMemo, useState } from "react";
 import DetailImage from "./DetailImage";
+import TongtangIconButton from "../../../../components/IconButton";
 
 interface IDetailViewProps {
     show: boolean;
@@ -21,6 +22,11 @@ function DetailView(props: IDetailViewProps) {
     const showNextButton = useMemo(() => {
         return props.totalImages > 1 && currentImageIndex < props.totalImages;
     }, [props.totalImages, currentImageIndex]);
+
+    const hideDetailView = () => {
+        setCurrentImageIndex(1);
+        props.hideDetailView();
+    }
 
     const arr = useMemo(() => Array.from(Array(props.totalImages)), [props.totalImages]);
 
@@ -62,23 +68,12 @@ function DetailView(props: IDetailViewProps) {
                     width: "1628px",
                     height: "699px",
                 }}>
-                    {showPrevButton && (
-                        <IconButton
-                            size="large"
-                            onClick={() => currentImageIndex > 1 && setCurrentImageIndex(currentImageIndex - 1)}
-                            aria-label="Prev"
-                            disableRipple
-                            disableFocusRipple
-                            sx={{
-                                color: "#fff",
-                                width: "48px",
-                                height: "48px",
-                                marginRight: "100px",
-                            }}
-                        >
-                            <ArrowBackIosIcon />
-                        </IconButton>
-                    )}
+                    <TongtangIconButton
+                        icon={<ArrowBackIosIcon />}
+                        opacity={showPrevButton ? 1 : 0}
+                        marginRight="100px"
+                        onClick={() => currentImageIndex > 1 && showPrevButton && setCurrentImageIndex(currentImageIndex - 1)}
+                    />
                     <Box
                         sx={{
                             position: "relative",
@@ -97,27 +92,16 @@ function DetailView(props: IDetailViewProps) {
                         })}
                         
                     </Box>
-                    {showNextButton &&(
-                        <IconButton
-                            size="large"
-                            onClick={() => currentImageIndex < props.totalImages && setCurrentImageIndex(currentImageIndex + 1)}
-                            aria-label="Prev"
-                            disableRipple
-                            disableFocusRipple
-                            sx={{
-                                color: "#fff",
-                                width: "48px",
-                                height: "48px",
-                                marginLeft: "100px",
-                            }}
-                        >
-                            <ArrowForwardIosIcon />
-                        </IconButton>
-                    )}
+                    <TongtangIconButton
+                        icon={<ArrowForwardIosIcon />}
+                        opacity={showNextButton ? 1 : 0}
+                        marginLeft="100px"
+                        onClick={() => currentImageIndex < props.totalImages && showNextButton && setCurrentImageIndex(currentImageIndex + 1)}
+                    />
                 </Box>
                 <IconButton
                     size="large"
-                    onClick={props.hideDetailView}
+                    onClick={hideDetailView}
                     aria-label="Close"
                     disableRipple
                     disableFocusRipple

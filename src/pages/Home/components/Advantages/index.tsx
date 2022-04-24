@@ -42,6 +42,7 @@ function Advantages() {
     }, []);
     const hideDetailView = useCallback(() => {
         setShowDetail(false);
+        setViewTotalImages(0);
     }, []);
 
     return (
