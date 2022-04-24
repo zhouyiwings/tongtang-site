@@ -13,6 +13,18 @@ const strings = {
     common: {
         more_plus: "More+",
     },
+    footer: {
+        contact_us: "联系我们",
+        email: "邮箱：market@hxtongtang.com",
+        phone: "电话：400-888-3305",
+        address: "地址：北京市朝阳区望京中环南路甲2号17层A1905",
+        official_qr_code: "官方微信二维码",
+        claim1: "©2018-2021",
+        claim2: "版权所有 北京春湘科技有限公司",
+        claim3: "京ICP备19049540号-1",
+        claim4: "京公网安备 xxxxxxxxxx号",
+        claim5: "部分设计元素由客户提供，本站服务案例展示不代表版权归属情况",
+    },
     business_scope: {
         product_line: "产品线",
         service_line: "服务线",
