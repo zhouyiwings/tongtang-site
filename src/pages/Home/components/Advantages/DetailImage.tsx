@@ -19,6 +19,10 @@ function DetailImage(props: IDetailImageProps) {
                 transition: "all 0.5s ease-in-out",
                 left: props.currentImageIndex > props.imageIndex ? 0 : (props.currentImageIndex < props.imageIndex ? "380px" : "78px"),
                 zIndex: props.currentImageIndex !== props.imageIndex ? 1 : 2,
+
+                "& img": {
+                    width: "100%",
+                },
             }}
         >
             <img src={`/home/advantages/detail_view/detail${props.sectionNumber + 1}-${props.imageIndex}@2x.png`} />

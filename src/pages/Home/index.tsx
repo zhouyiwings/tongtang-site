@@ -7,6 +7,7 @@ import Clients from "./components/Clients";
 import "./Home.scss";
 import Footer from "../../components/Footer";
 import Advantages from "./components/Advantages";
+import Portfolio from "./components/Portfolio";
 
 function Home() {
 
@@ -67,6 +68,7 @@ function Home() {
             <BusinessScope />
             <NewArrivals />
             <Advantages />
+            <Portfolio />
             <Clients />
             <Footer />
         </Box>

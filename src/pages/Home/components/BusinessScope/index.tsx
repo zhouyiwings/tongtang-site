@@ -121,7 +121,7 @@ function BusinessScope() {
                 padding: "101px 0",
                 backgroundColor: "#F5F5F5",
                 scrollSnapAlign: "start",
-                height: "100vh",
+                height: "1000px",
                 boxSizing: "border-box",
             }}
         >

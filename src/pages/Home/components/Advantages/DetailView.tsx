@@ -1,5 +1,5 @@
 import { IconButton } from "@mui/material";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
@@ -69,7 +69,7 @@ function DetailView(props: IDetailViewProps) {
                     height: "699px",
                 }}>
                     <TongtangIconButton
-                        icon={<ArrowBackIosIcon />}
+                        icon={<ArrowBackIosNewIcon />}
                         opacity={showPrevButton ? 1 : 0}
                         marginRight="100px"
                         onClick={() => currentImageIndex > 1 && showPrevButton && setCurrentImageIndex(currentImageIndex - 1)}
