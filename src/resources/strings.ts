@@ -242,6 +242,129 @@ const strings = {
                 content: "独具匠心的点心礼盒包装设计，将水墨风格的传统中国画结合卡通形象和主IP，化用为设计元素和构图，即富含传统文化内涵，又充满童趣和现代简约设计。包括刘贯道《梦蝶图》、陆治《竹林长夏图》以及阎立本《十八学士图》等。",
             },
         },
+        solar_terms: {
+            title: "二十四节气小能",
+            term1: {
+                title: "立春",
+                sub_title: "LICHUN",
+                url: "/cases/solar_terms/1.png",
+            },
+            term2: {
+                title: "雨水",
+                sub_title: "YUSHUI",
+                url: "/cases/solar_terms/2.png",
+            },
+            term3: {
+                title: "惊蛰",
+                sub_title: "JINGZHE",
+                url: "/cases/solar_terms/3.png",
+            },
+            term4: {
+                title: "春分",
+                sub_title: "CHUNFEN",
+                url: "/cases/solar_terms/4.png",
+            },
+            term5: {
+                title: "清明",
+                sub_title: "QINGMING",
+                url: "/cases/solar_terms/5.png",
+            },
+            term6: {
+                title: "谷雨",
+                sub_title: "GUYU",
+                url: "/cases/solar_terms/6.png",
+            },
+            term7: {
+                title: "立夏",
+                sub_title: "LIXIA",
+                url: "/cases/solar_terms/7.png",
+            },
+            term8: {
+                title: "小满",
+                sub_title: "XIAOMAN",
+                url: "/cases/solar_terms/8.png",
+            },
+            term9: {
+                title: "芒种",
+                sub_title: "MANGZHONG",
+                url: "/cases/solar_terms/9.png",
+            },
+            term10: {
+                title: "夏至",
+                sub_title: "XIAZHI",
+                url: "/cases/solar_terms/10.png",
+            },
+            term11: {
+                title: "小暑",
+                sub_title: "XIAOSHU",
+                url: "/cases/solar_terms/11.png",
+            },
+            term12: {
+                title: "大暑",
+                sub_title: "DASHU",
+                url: "/cases/solar_terms/12.png",
+            },
+            term13: {
+                title: "立秋",
+                sub_title: "LIQIU",
+                url: "/cases/solar_terms/13.png",
+            },
+            term14: {
+                title: "处暑",
+                sub_title: "CHUSHU",
+                url: "/cases/solar_terms/14.png",
+            },
+            term15: {
+                title: "白露",
+                sub_title: "BAILU",
+                url: "/cases/solar_terms/15.png",
+            },
+            term16: {
+                title: "秋分",
+                sub_title: "QIUFEN",
+                url: "/cases/solar_terms/16.png",
+            },
+            term17: {
+                title: "寒霜",
+                sub_title: "HANSHUANG",
+                url: "/cases/solar_terms/17.png",
+            },
+            term18: {
+                title: "霜降",
+                sub_title: "SHUANGJIANG",
+                url: "/cases/solar_terms/18.png",
+            },
+            term19: {
+                title: "立冬",
+                sub_title: "LIDONG",
+                url: "/cases/solar_terms/19.png",
+            },
+            term20: {
+                title: "小雪",
+                sub_title: "XIAOXUE",
+                url: "/cases/solar_terms/20.png",
+            },
+            term21: {
+                title: "大雪",
+                sub_title: "DAXUE",
+                url: "/cases/solar_terms/21.png",
+            },
+            term22: {
+                title: "冬至",
+                sub_title: "DONGZHI",
+                url: "/cases/solar_terms/22.png",
+            },
+            term23: {
+                title: "小寒",
+                sub_title: "XIAOHAN",
+                url: "/cases/solar_terms/23.png",
+            },
+            term24: {
+                title: "大寒",
+                sub_title: "DAHAN",
+                url: "/cases/solar_terms/24.png",
+            },
+        },
         creative_design: {
             title: "棠镇全景图",
             content: "核心成员拥有10年以上供应链管理经验；设计团队多次荣获国际国内设计大奖，项目多次荣设以上供应链管理经验",

@@ -6,6 +6,7 @@ interface ITongtangIconButtonProps {
     marginLeft?: string;
     marginRight?: string;
     onClick: () => void;
+    variant?: "outlined";
 }
 
 function TongtangIconButton(props: ITongtangIconButtonProps) {
@@ -17,17 +18,19 @@ function TongtangIconButton(props: ITongtangIconButtonProps) {
                 height: "48px",
                 marginLeft: props.marginLeft || "0px",
                 marginRight: props.marginRight || "0px",
-                backgroundColor: "#b3b3b6",
-                color: "#8d8f90",
+                backgroundColor: props.variant === "outlined" ? "transparent" : "#b3b3b6",
+                color: props.variant === "outlined" ? "#2e3233" : "#8d8f90",
+                border: props.variant === "outlined" ? "1px solid #2e3233" : undefined,
                 opacity: props.opacity !== undefined ? props.opacity : 1,
                 
                 "& svg": {
-                    fill: "#8d8f90",
+                    fill: props.variant === "outlined" ? "#2e3233" : "#8d8f90",
                 },
 
                 "&:hover": {
                     backgroundColor: "#ff7006",
                     color: "#fff",
+                    border: "none",
                     "& svg": {
                         fill: "#fff",
                     },

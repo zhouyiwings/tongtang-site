@@ -55,7 +55,7 @@ function Reserve() {
                 }}
             >
                 <Box
-                    className={`images ${isHovered ? "" : "animate"}`}
+                    className={`images`}
                     sx={{
                         display: "flex",
                         flexDirection: "column",

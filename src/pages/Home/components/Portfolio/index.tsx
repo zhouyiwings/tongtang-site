@@ -151,11 +151,13 @@ function Portfolio() {
                                     icon={<ArrowBackIosNewIcon />}
                                     marginRight="32px"
                                     onClick={onClickPrev}
+                                    variant="outlined"
                                 />
                                 <TongtangIconButton
                                     icon={<ArrowForwardIosIcon />}
                                     marginRight="32px"
                                     onClick={onClickNext}
+                                    variant="outlined"
                                 />
                             </Box>
                         </Box>
