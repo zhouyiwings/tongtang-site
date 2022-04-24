@@ -1,4 +1,7 @@
 import { Box } from "@mui/material";
+import Footer from "../../components/Footer";
+import ClientWall from "./ClientWall";
+import Section1 from "./Section1";
 
 function Cases() {
 
@@ -7,7 +10,9 @@ function Cases() {
             width: "100%",
             flex: "1 1 auto",
         }}>
-            Cases
+            <Section1 />
+            <ClientWall />
+            <Footer />
         </Box>
     )
 }

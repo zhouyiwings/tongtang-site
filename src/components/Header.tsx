@@ -41,7 +41,13 @@ function Header() {
     return (
         <Box display="flex" flexDirection="row" sx={{
             height: "80px",
+            width: "100vw",
+            position: "fixed",
+            top: 0,
+            left: 0,
             zIndex: 9999,
+            background: "#fff",
+            opacity: 0.8,
         }}>
             <Box sx={{
                 width: "136px",
@@ -53,7 +59,7 @@ function Header() {
                     width: "100%",
                 }
             }}>
-                <img src="./logo@2x.png" />
+                <img src="/logo@2x.png" />
             </Box>
             <Tabs
                 value={tabValue}
@@ -78,10 +84,10 @@ function Header() {
                 indicatorColor="primary"
                 textColor="primary"
             >
-                <Tab label={R.strings.header.tabs.label_home} value="1" />
-                <Tab label={R.strings.header.tabs.label_cases} value="2" />
-                <Tab label={R.strings.header.tabs.label_us} value="3" />
-                <Tab label={R.strings.header.tabs.label_join} value="4" />
+                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_home} value="1" />
+                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_cases} value="2" />
+                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_us} value="3" />
+                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_join} value="4" />
             </Tabs>
             <Button
                 disableRipple

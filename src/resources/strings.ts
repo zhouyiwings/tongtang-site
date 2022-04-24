@@ -82,6 +82,58 @@ const strings = {
             title5_2: "WMS 仓储物流管理系统",
         }
     },
+    cases: {
+        section1: {
+            content1: {
+                title1: "/cases/section1/title1@2x.png",
+                detail1: "- 提供节日福利、活动礼盒的全案定制",
+                detail2: "- 包括选品推荐、视觉设计、打样生产、物流交付等全流程服务",
+                detail3: "- 无忧定制专属礼盒",
+            },
+            content2: {
+                title1: "/cases/section1/title2@2x.png",
+                detail1: "- 提供臻选品质、工艺、材料的单品",
+                detail2: "- 产品库种类齐全，价格区间覆盖广泛",
+                detail3: "- 随心挑选优质单品",
+            },
+            content3: {
+                title1: "/cases/section1/title3@2x.png",
+                detail1: "- 提供IP产品研发、IP联名项目设计落地",
+                detail2: "- 提供非遗文化创意产品、衍生品的开发定制",
+                detail3: "- 用产品传承文化与内涵",
+            },
+            content4: {
+                title1: "/cases/section1/title4@2x.png",
+                detail1: "- 提供原创的设计提案，延伸品牌和视觉传达",
+                detail2: "- 包括平面、3D、结构、手绘等多种设计能力",
+                detail3: "- 让设计更富创造性",
+            },
+            nav1: {
+                icon: "/cases/section1/icon1@2x.png",
+                icon_hovered: "/cases/section1/icon1-hovered@2x.png",
+                title: "全案礼盒",
+                sub_title: "Whole Box",
+            },
+            nav2: {
+                icon: "/cases/section1/icon2@2x.png",
+                icon_hovered: "/cases/section1/icon2-hovered@2x.png",
+                title: "臻选单品",
+                sub_title: "Tongtang Reserve",
+            },
+            nav3: {
+                icon: "/cases/section1/icon3@2x.png",
+                icon_hovered: "/cases/section1/icon3-hovered@2x.png",
+                title: "文化周边",
+                sub_title: "Culture Derivative",
+            },
+            nav4: {
+                icon: "/cases/section1/icon4@2x.png",
+                icon_hovered: "/cases/section1/icon4-hovered@2x.png",
+                title: "创意设计",
+                sub_title: "Creative Design",
+            },
+        }
+    },
     portfolio: {
         title1: "得物2022年新年礼盒",
         desc1: "使用设计工具的好处在于，当这些项目材料同时呈现，能够帮助我们进行模式识别，并促进更多创新结合体的出现，这些是当资源隐藏分。使用设计工具的好处在于，当这些项目材料同时呈现，能够帮助我们进行模式识别，并促进更多创新结合体的出现，这些是当资源隐藏分。",
