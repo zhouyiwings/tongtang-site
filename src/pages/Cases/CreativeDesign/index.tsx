@@ -15,7 +15,7 @@ function CreativeDesign() {
             }}
         >
             <Box sx={{
-                width: "1231px",
+                width: "64.1145833%",
                 height: "645px",
                 position: "absolute",
                 background: "#f5f5f5",

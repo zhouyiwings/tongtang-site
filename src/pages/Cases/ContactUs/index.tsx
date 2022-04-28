@@ -1,9 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import R from "../../../resources/Namespace";
+import ContactUsModal from "./Modal";
 
 function ContactUs() {
     const [isHovered, setIsHovered] = useState(false);
+    const [showContactModal, setShowContactModal] = useState(false);
 
     return (
         <Box
@@ -40,6 +42,7 @@ function ContactUs() {
             <Box
                 onMouseOver={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={() => setShowContactModal(true)}
                 sx={{
                     display: "flex",
                     alignItems: "center",
@@ -56,6 +59,7 @@ function ContactUs() {
             >
                 <Typography fontSize={24} color={"#fff"} lineHeight="36px" fontWeight={500}>{R.strings.footer.contact_us}</Typography>
             </Box>
+            {showContactModal ? <ContactUsModal onClose={() => setShowContactModal(false)} /> : null}
         </Box>
     )
 }

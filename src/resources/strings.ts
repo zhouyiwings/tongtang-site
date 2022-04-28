@@ -325,8 +325,8 @@ const strings = {
                 url: "/cases/solar_terms/16.png",
             },
             term17: {
-                title: "寒霜",
-                sub_title: "HANSHUANG",
+                title: "寒露",
+                sub_title: "HANLU",
                 url: "/cases/solar_terms/17.png",
             },
             term18: {
@@ -364,6 +364,20 @@ const strings = {
                 sub_title: "DAHAN",
                 url: "/cases/solar_terms/24.png",
             },
+        },
+        contact_us: {
+            official_phone_title: "官方电话",
+            official_phone: "400-888-3005",
+            beijing_site: "北京总部",
+            beijing_contact_person: "北京联系人：周熠",
+            beijing_phone: "联系人电话：133 6331 2878",
+            shanghai_site: "上海分公司",
+            shanghai_contact_person: "上海联系人：马晓朵",
+            shanghai_phone: "联系人电话：178 0105 9665",
+            shenzhen_site: "深圳分公司",
+            shenzhen_contact_person: "深圳联系人：李宏栓",
+            shenzhen_phone: "联系人电话：185 9804 3835",
+            visit: "立即访问",
         },
         creative_design: {
             title: "棠镇全景图",
