@@ -1,4 +1,8 @@
 import { Box } from "@mui/material";
+import Footer from "../../components/Footer";
+import Banner from "./Banner";
+import CompanyIntro from "./CompanyIntro";
+import Qualifications from "./Qualifications";
 
 function AboutUs() {
 
@@ -6,8 +10,12 @@ function AboutUs() {
         <Box display="flex" flexDirection="column" sx={{
             width: "100%",
             flex: "1 1 auto",
+            alignItems: "center",
         }}>
-            AboutUs
+            <Banner />
+            <CompanyIntro />
+            <Qualifications />
+            <Footer />
         </Box>
     )
 }
