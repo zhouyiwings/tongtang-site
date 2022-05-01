@@ -38,7 +38,7 @@ function DetailView(props: IDetailViewProps) {
             height: "100vh",
             left: 0,
             top: 0,
-            zIndex: 99,
+            zIndex: 9999,
         }}>
             <Box sx={{
                 position: "absolute",
@@ -87,7 +87,7 @@ function DetailView(props: IDetailViewProps) {
                     >
                         {arr.map((_, index) => {
                             return (
-                                <DetailImage currentImageIndex={currentImageIndex} sectionNumber={props.section} imageIndex={index + 1} />
+                                <DetailImage totalImages={props.totalImages} currentImageIndex={currentImageIndex} sectionNumber={props.section} imageIndex={index + 1} />
                             );
                         })}
                         

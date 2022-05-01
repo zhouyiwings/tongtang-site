@@ -6,6 +6,7 @@ interface IDetailImageProps {
     sectionNumber: number;
     imageIndex: number;
     currentImageIndex: number;
+    totalImages: number;
 }
 
 function DetailImage(props: IDetailImageProps) {
@@ -18,7 +19,7 @@ function DetailImage(props: IDetailImageProps) {
                 height: props.currentImageIndex !== props.imageIndex ? "545.63px" : "699px",
                 transition: "all 0.5s ease-in-out",
                 left: props.currentImageIndex > props.imageIndex ? 0 : (props.currentImageIndex < props.imageIndex ? "380px" : "78px"),
-                zIndex: props.currentImageIndex !== props.imageIndex ? 1 : 2,
+                zIndex: props.currentImageIndex === props.imageIndex ? (props.totalImages + 1) : (props.currentImageIndex > props.imageIndex ? 1 : (props.totalImages - props.imageIndex)),
 
                 "& img": {
                     width: "100%",
