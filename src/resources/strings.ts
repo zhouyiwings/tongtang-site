@@ -424,6 +424,15 @@ const strings = {
         contact_title: "投递方式",
         contact: "简历投递邮箱：hr@hxtongtang.com ",
         benefit: "五险一金，补充医疗，带薪年假，部分带薪病假；年度体检，节日福利，住房补贴；丰富的业余团建生活；频繁的企业内部培训，外部培训及进修。",
+        office: {
+            intro: "温馨、整洁、明亮的办公环境；众多的公司自制手办、公仔、摆件让你的工位充满活力；完善的会议设备让远程沟通高效、便捷；随业务和团队扩张，即将搬赴更广阔的办公室。",
+            office_area: "办公区",
+            meeting_area: "会议室",
+            display_area: "展示区",
+            selective: "单品",
+            toy: "公仔",
+            gift_box: "礼盒",
+        },
         recruit: {
             beijing_pos1: {
                 title: "大客户销售经理",

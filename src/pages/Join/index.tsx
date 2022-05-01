@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Footer from "../../components/Footer";
 import Banner from "./Banner";
 import Benefits from "./Benefits";
+import Office from "./Office";
 import Recruiting from "./Recruiting";
 
 function Join() {
@@ -12,6 +13,7 @@ function Join() {
             flex: "1 1 auto",
         }}>
             <Banner />
+            <Office />
             <Benefits />
             <Recruiting />
             <Footer />
