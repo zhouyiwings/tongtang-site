@@ -28,6 +28,7 @@ function Office() {
                 <Box sx={{
                     backgroundImage: "url(/join_us/office/title@2x.png)",
                     backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
                     width: "339px",
                     height: "105px",
                 }} />

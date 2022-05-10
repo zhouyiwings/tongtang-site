@@ -8,8 +8,21 @@ import "./Home.scss";
 import Footer from "../../components/Footer";
 import Advantages from "./components/Advantages";
 import Portfolio from "./components/Portfolio";
+import { useHistory, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home() {
+    const location = useLocation();
+    const history = useHistory();
+
+    useEffect(() => {
+        console.log("current location", location);
+
+        return () => {
+            console.log("next location" , location);
+            console.log("next history location" , history.location);
+        }
+    }, []);
 
     return (
         <Box className="main">
