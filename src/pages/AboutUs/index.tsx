@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Footer from "../../components/Footer";
 import Banner from "./Banner";
 import CompanyIntro from "./CompanyIntro";
+import Location from "./Location";
 import Qualifications from "./Qualifications";
 
 function AboutUs() {
@@ -15,6 +16,7 @@ function AboutUs() {
             <Banner />
             <CompanyIntro />
             <Qualifications />
+            <Location />
             <Footer />
         </Box>
     )

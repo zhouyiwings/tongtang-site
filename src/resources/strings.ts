@@ -408,6 +408,29 @@ const strings = {
         cert2: "食品经营许可证",
         cert3: "质量管理体系认证证书（中英文）",
         cert4: "售后服务认证证书（中英文）",
+        location: {
+            beijing: {
+                title: "北京总部",
+                address: "北京市朝阳区望京街道佳境天城A座1905",
+                coordinate: [
+                    116.476474, 39.980428,
+                ],
+            },
+            shanghai: {
+                title: "上海分公司",
+                address: "北京市朝阳区望京街道佳境天城A座1905",
+                coordinate: [
+                    116.476474, 39.980428,
+                ],
+            },
+            shenzhen: {
+                title: "深圳分公司",
+                address: "广东省深圳市福田区沙头街道泰然科技园201栋东座419",
+                coordinate: [
+                    114.027456,22.534893,
+                ],
+            },
+        }
     },
     join_us: {
         join: "加入",
