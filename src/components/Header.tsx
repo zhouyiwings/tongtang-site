@@ -89,10 +89,10 @@ function Header() {
                 indicatorColor="primary"
                 textColor="primary"
             >
-                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_home} value="1" />
-                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_cases} value="2" />
-                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_us} value="3" />
-                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_join} value="4" />
+                <Tab sx={{fontSize: "20px", fontWeight: tabValue === "1" ? 600 : 400, color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_home} value="1" />
+                <Tab sx={{fontSize: "20px", fontWeight: tabValue === "2" ? 600 : 400, color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_cases} value="2" />
+                <Tab sx={{fontSize: "20px", fontWeight: tabValue === "3" ? 600 : 400, color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_us} value="3" />
+                <Tab sx={{fontSize: "20px", fontWeight: tabValue === "4" ? 600 : 400, color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_join} value="4" />
             </Tabs>
             <Button
                 disableRipple
