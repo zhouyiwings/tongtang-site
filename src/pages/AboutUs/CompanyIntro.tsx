@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../helpers/urlHelper";
 import R from "../../resources/Namespace";
 
 function CompanyIntro() {
@@ -14,7 +15,7 @@ function CompanyIntro() {
             <Box sx={{
                 height: "649px",
                 width: "500px",
-                backgroundImage: "url(/about_us/intro@2x.png)",
+                backgroundImage: `url(${getImageUrl("/about_us/intro@2x.png")})`,
                 backgroundSize: "contain",
                 marginRight: "99px",
             }} />
@@ -28,7 +29,7 @@ function CompanyIntro() {
                 <Box sx={{
                     width: "320px",
                     height: "105px",
-                    backgroundImage: "url(/about_us/intro_title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/about_us/intro_title@2x.png")})`,
                     backgroundSize: "contain",
                     marginBottom: "28px",
                 }} />

@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useCallback, useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 interface INavBoxProps {
     currentIndex: number;
@@ -40,7 +41,7 @@ function NavBox(props: INavBoxProps) {
                 sx={{
                     height: "50px",
                     width: "50px",
-                    backgroundImage: props.currentIndex === props.index ? `url(${props.iconHovered})` : `url(${props.icon})`,
+                    backgroundImage: props.currentIndex === props.index ? `url(${getImageUrl(props.iconHovered)})` : `url(${getImageUrl(props.icon)})`,
                     backgroundSize: "contain",
                     marginBottom: "14px",
                 }}

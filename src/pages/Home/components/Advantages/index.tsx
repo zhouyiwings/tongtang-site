@@ -1,5 +1,6 @@
 import { Box } from "@mui/system";
 import { useCallback, useState } from "react";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 import R from "../../../../resources/Namespace";
 import AccordionTab from "./AccordionTab";
 import DetailView from "./DetailView";
@@ -63,7 +64,7 @@ function Advantages() {
                     height: "105px",
                     width: "256px",
                 }}>
-                <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src="/home/advantages/title@2x.png" />
+                <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src={getImageUrl("/home/advantages/title@2x.png")} />
             </Box>
             <Box
                 className="accordionWrapper"

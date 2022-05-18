@@ -1,4 +1,5 @@
 import { Box } from "@mui/system";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 
 interface ITitleBoxProps {
@@ -14,7 +15,7 @@ function TitleBox(props: ITitleBoxProps) {
             sx={{
                 width: "272px",
                 height: "304px",
-                backgroundImage: `url(${props.background})`,
+                backgroundImage: `url(${getImageUrl(props.background)})`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
             }}

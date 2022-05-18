@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { useCallback, useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import Tab from "./Tab";
 import Tab1Content from "./Tab1Content";
 import Tab2Content from "./Tab2Content";
@@ -27,7 +28,7 @@ function CultureDerivative() {
                 sx={{
                     height: "105px",
                     width: "396px",
-                    backgroundImage: "url(/cases/culture_derivative/title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/title@2x.png")})`,
                     backgroundSize: "contain",
                     marginTop: "96px",
                     marginBottom: "36px",

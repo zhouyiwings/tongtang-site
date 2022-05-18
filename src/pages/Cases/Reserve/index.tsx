@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 import "./index.scss";
 
@@ -39,7 +40,7 @@ function Reserve() {
                 sx={{
                     height: "105px",
                     width: "246px",
-                    backgroundImage: "url(/cases/tongtang_reserve/title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/tongtang_reserve/title@2x.png")})`,
                     backgroundSize: "contain",
                     marginTop: "96px",
                     marginBottom: "50px",
@@ -70,12 +71,12 @@ function Reserve() {
                     >
                         {images_row1.map((url) => {
                             return (
-                                <Box key={url} className="image" sx={{backgroundImage: `url(${url})`}} />
+                                <Box key={url} className="image" sx={{backgroundImage: `url(${getImageUrl(url)})`}} />
                             )
                         })}
                         {images_row1_repeat.map((url) => {
                             return (
-                                <Box key={url} className="image" sx={{backgroundImage: `url(${url})`}} />
+                                <Box key={url} className="image" sx={{backgroundImage: `url(${getImageUrl(url)})`}} />
                             )
                         })}
                     </Box>
@@ -89,12 +90,12 @@ function Reserve() {
                     >
                         {images_row2.map((url) => {
                             return (
-                                <Box key={url} className="image" sx={{backgroundImage: `url(${url})`}} />
+                                <Box key={url} className="image" sx={{backgroundImage: `url(${getImageUrl(url)})`}} />
                             )
                         })}
                         {images_row2_repeat.map((url) => {
                             return (
-                                <Box key={url} className="image" sx={{backgroundImage: `url(${url})`}} />
+                                <Box key={url} className="image" sx={{backgroundImage: `url(${getImageUrl(url)})`}} />
                             )
                         })}
                     </Box>
@@ -107,12 +108,12 @@ function Reserve() {
                     >
                         {images_row3.map((url) => {
                             return (
-                                <Box key={url} className="image" sx={{backgroundImage: `url(${url})`}} />
+                                <Box key={url} className="image" sx={{backgroundImage: `url(${getImageUrl(url)})`}} />
                             )
                         })}
                         {images_row3_repeat.map((url) => {
                             return (
-                                <Box key={url} className="image" sx={{backgroundImage: `url(${url})`}} />
+                                <Box key={url} className="image" sx={{backgroundImage: `url(${getImageUrl(url)})`}} />
                             )
                         })}
                     </Box>

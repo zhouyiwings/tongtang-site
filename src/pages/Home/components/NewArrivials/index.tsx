@@ -8,6 +8,7 @@ import R from "../../../../resources/Namespace";
 
 import "./index.scss";
 import TongtangButton from "../../../../components/Button";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 gsap.registerPlugin(ScrollTrigger);
 function NewArrivals() {
@@ -138,7 +139,7 @@ function NewArrivals() {
                             marginBottom: "28px",
                         }}
                     >
-                        <img src="/home/new_arrivals/title@2x.png" style={{backgroundSize: "contain", width: "100%"}} />
+                        <img src={getImageUrl("/home/new_arrivals/title@2x.png")} style={{backgroundSize: "contain", width: "100%"}} />
                     </Box>
                     <Box
                         id="text"

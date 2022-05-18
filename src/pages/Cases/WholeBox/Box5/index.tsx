@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
 import R from "../../../../resources/Namespace";
 import TongtangTimeline from "../Timeline";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 interface IBox5Props {
     closeBox: () => void;
@@ -77,7 +78,7 @@ function Box5(props: IBox5Props) {
                     zIndex: 1,
                 }}>
                     <Box height="484px" marginBottom="32px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box5/1@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box5/1@2x.png")})`,
                         backgroundSize: "cover",
                     }} />
                     <Box sx={{
@@ -85,11 +86,11 @@ function Box5(props: IBox5Props) {
                         flexDirection: "row"
                     }}>
                         <Box width="348px" height="234px" marginRight="32px" sx={{
-                            backgroundImage: "url(/cases/whole_box/box5/2@2x.png)",
+                            backgroundImage: `url(${getImageUrl("/cases/whole_box/box5/2@2x.png")})`,
                             backgroundSize: "cover",
                         }} />
                         <Box width="348px" height="234px" sx={{
-                            backgroundImage: "url(/cases/whole_box/box5/3@2x.png)",
+                            backgroundImage: `url(${getImageUrl("/cases/whole_box/box5/3@2x.png")})`,
                             backgroundSize: "cover",
                         }} />
                     </Box>
@@ -103,7 +104,7 @@ function Box5(props: IBox5Props) {
                 }}>
                     <Box height="80px" />
                     <Box height="670px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box5/4@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box5/4@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -116,7 +117,7 @@ function Box5(props: IBox5Props) {
                 }}>
                     <Box height="516px" />
                     <Box height="234px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box5/5@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box5/5@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>

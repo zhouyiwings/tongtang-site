@@ -5,6 +5,7 @@ import NavBox from "./NavBox";
 
 import "./index.scss"
 import { Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 interface ISection1Props {
 
@@ -35,7 +36,7 @@ function Section1(props: ISection1Props) {
             <Box
                 sx={{
                     width: "59.191919%",
-                    backgroundImage: `url(/cases/section1/section1-${index + 1}@2x.png)`,
+                    backgroundImage: `url(${getImageUrl(`/cases/section1/section1-${index + 1}@2x.png`)})`,
                     backgroundSize: "cover",
                     transition: "all 0.5s",
                 }}
@@ -54,7 +55,7 @@ function Section1(props: ISection1Props) {
                         width: "265px",
                         height: "79px",
                         marginBottom: "32px",
-                        backgroundImage: `url(/cases/section1/title${index+1}@2x.png)`,
+                        backgroundImage: `url(${getImageUrl(`/cases/section1/title${index + 1}@2x.png`)})`,
                         backgroundSize: "contain",
                     }}
                 />

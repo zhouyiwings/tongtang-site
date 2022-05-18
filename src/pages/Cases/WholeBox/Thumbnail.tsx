@@ -2,6 +2,7 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
 import TongtangButton from "../../../components/Button";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 interface IThumbnailProps {
@@ -22,7 +23,7 @@ function Thumbnail(props: IThumbnailProps) {
             sx={{
                 width: props.width,
                 height: props.height,
-                backgroundImage: `url(/cases/whole_box/case${props.index + 1}@2x.png)`,
+                backgroundImage: `url(${getImageUrl(`/cases/whole_box/case${props.index + 1}@2x.png`)})`,
                 marginBottom: props.marginBottom,
                 backgroundSize: "contain",
             }}

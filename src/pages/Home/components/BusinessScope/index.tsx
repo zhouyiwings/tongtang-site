@@ -6,6 +6,7 @@ import TitleBox from "./TitleBox";
 import "./index.scss"
 import ContentBox from "./ContentBox";
 import R from "../../../../resources/Namespace";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 gsap.registerPlugin(ScrollTrigger);
 function BusinessScope() {
@@ -137,7 +138,7 @@ function BusinessScope() {
                 }}
             >
                 <Box className="title">
-                    <img src="/home/business_scope/business_scope@2x.png" />
+                    <img src={getImageUrl("/home/business_scope/business_scope@2x.png")} />
                 </Box>
                 <Box
                     display="flex"

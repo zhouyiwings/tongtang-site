@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 function Tab2Content() {
@@ -19,7 +20,7 @@ function Tab2Content() {
                 <Box sx={{
                     width: "100%",
                     height: "560px",
-                    backgroundImage: "url(/cases/culture_derivative/tab2/1@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/1@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
@@ -30,13 +31,13 @@ function Tab2Content() {
                     <Box sx={{
                         width: "384px",
                         height: "100%",
-                        backgroundImage: "url(/cases/culture_derivative/tab2/2@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/2@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                     <Box sx={{
                         width: "384px",
                         height: "100%",
-                        backgroundImage: "url(/cases/culture_derivative/tab2/3@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/3@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                 </Box>
@@ -49,19 +50,19 @@ function Tab2Content() {
                 <Box sx={{
                     width: "100%",
                     height: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab2/4@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/4@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
                     width: "100%",
                     height: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab2/5@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/5@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
                     width: "100%",
                     height: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab2/6@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/6@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>
@@ -79,13 +80,13 @@ function Tab2Content() {
                     <Box sx={{
                         width: "384px",
                         height: "100%",
-                        backgroundImage: "url(/cases/culture_derivative/tab2/7@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/7@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                     <Box sx={{
                         width: "384px",
                         height: "100%",
-                        backgroundImage: "url(/cases/culture_derivative/tab2/9@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/9@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                 </Box>
@@ -112,13 +113,13 @@ function Tab2Content() {
                     <Box sx={{
                         width: "384px",
                         height: "100%",
-                        backgroundImage: "url(/cases/culture_derivative/tab2/8@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/8@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                     <Box sx={{
                         width: "384px",
                         height: "100%",
-                        backgroundImage: "url(/cases/culture_derivative/tab2/10@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab2/10@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                 </Box>

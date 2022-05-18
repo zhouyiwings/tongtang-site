@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
 import TongtangTimeline from "../Timeline";
 import R from "../../../../resources/Namespace";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 interface IBox8Props {
     closeBox: () => void;
@@ -77,7 +78,7 @@ function Box8(props: IBox8Props) {
                     zIndex: 1,
                 }}>
                     <Box height="280px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box8/1@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box8/1@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -89,12 +90,12 @@ function Box8(props: IBox8Props) {
                     zIndex: 1,
                 }}>
                     <Box height="280px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box8/2@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box8/2@2x.png")})`,
                         backgroundSize: "cover",
                         marginBottom: "32px",
                     }}/>
                     <Box height="280px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box8/3@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box8/3@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -106,12 +107,12 @@ function Box8(props: IBox8Props) {
                     zIndex: 1,
                 }}>
                     <Box height="280px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box8/4@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box8/4@2x.png")})`,
                         backgroundSize: "cover",
                         marginBottom: "32px",
                     }}/>
                     <Box height="280px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box8/5@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box8/5@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -124,7 +125,7 @@ function Box8(props: IBox8Props) {
                 }}>
                     <Box height="312px" />
                     <Box height="438px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box8/6@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box8/6@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>

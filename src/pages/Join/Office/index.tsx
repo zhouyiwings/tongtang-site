@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 import DisplayAreaImages from "./DisplayAreaImages";
 import ImageCard from "./ImageCard";
@@ -26,7 +27,7 @@ function Office() {
                 marginBottom: "60px",
             }}>
                 <Box sx={{
-                    backgroundImage: "url(/join_us/office/title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/join_us/office/title@2x.png")})`,
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     width: "339px",

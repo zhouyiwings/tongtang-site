@@ -1,5 +1,6 @@
 import { Box } from "@mui/system";
 import { useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import Box1 from "./Box1";
 import Box2 from "./Box2";
 import Box3 from "./Box3";
@@ -50,7 +51,7 @@ function WholeBox() {
                         marginBottom: "50px",
                     }}
                 >
-                    <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src="/cases/whole_box/title@2x.png" />
+                    <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src={getImageUrl("/cases/whole_box/title@2x.png")} />
                 </Box>
                 <Box
                     sx={{

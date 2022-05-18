@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
 import R from "../../../../resources/Namespace";
 import TongtangTimeline from "../Timeline";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 interface IBox2Props {
     closeBox: () => void;
@@ -82,12 +83,12 @@ function Box2(props: IBox2Props) {
                     zIndex: 1,
                 }}>
                     <Box height="232px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box2/1@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box2/1@2x.png")})`,
                         backgroundSize: "cover",
                         marginBottom: "32px",
                     }}/>
                     <Box height="486px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box2/2@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box2/2@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -100,7 +101,7 @@ function Box2(props: IBox2Props) {
                 }}>
                     <Box height="114px" />
                     <Box height="636px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box2/3@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box2/3@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -112,12 +113,12 @@ function Box2(props: IBox2Props) {
                     zIndex: 1,
                 }}>
                     <Box height="419px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box2/4@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box2/4@2x.png")})`,
                         backgroundSize: "cover",
                         marginBottom: "32px",
                     }}/>
                     <Box height="298px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box2/5@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box2/5@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>

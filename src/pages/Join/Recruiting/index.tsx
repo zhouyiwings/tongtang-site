@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { useCallback, useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 import DetailModal from "./DetailModal";
 import RecruitingCard from "./RecruitingCard";
@@ -21,7 +22,7 @@ function Recruiting() {
             <Box sx={{
                 width: "326px",
                 height: "105px",
-                backgroundImage: "url(/join_us/recruit_title@2x.png)",
+                backgroundImage: `url(${getImageUrl("/join_us/recruit_title@2x.png")})`,
                 backgroundSize: "contain",
                 marginBottom: "62px",
             }} />

@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 function Tab1Content() {
@@ -19,13 +20,13 @@ function Tab1Content() {
                 <Box sx={{
                     width: "100%",
                     height: "560px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/1@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/1@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
                     width: "100%",
                     height: "281px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/2@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/2@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>
@@ -37,7 +38,7 @@ function Tab1Content() {
                 <Box sx={{
                     width: "100%",
                     height: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/3@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/3@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
@@ -57,7 +58,7 @@ function Tab1Content() {
                 <Box sx={{
                     width: "100%",
                     height: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/4@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/4@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>
@@ -69,7 +70,7 @@ function Tab1Content() {
                 <Box sx={{
                     width: "100%",
                     height: "840px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/5@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/5@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>
@@ -81,13 +82,13 @@ function Tab1Content() {
                 <Box sx={{
                     width: "100%",
                     height: "360px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/6@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/6@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
                     width: "100%",
                     height: "481px",
-                    backgroundImage: "url(/cases/culture_derivative/tab1/7@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab1/7@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>

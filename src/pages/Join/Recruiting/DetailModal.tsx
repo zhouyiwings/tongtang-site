@@ -1,6 +1,7 @@
 import { Box, IconButton, Typography } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import R from "../../../resources/Namespace";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 interface IDetailModalProps {
     onClose: () => void;
@@ -90,7 +91,7 @@ function DetailModal(props: IDetailModalProps) {
                     <Box sx={{
                         width: "14px",
                         height: "14px",
-                        backgroundImage: "url(/join_us/location@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/join_us/location@2x.png")})`,
                         backgroundSize: "contain",
                         marginRight: "4px",
                     }} />
@@ -134,7 +135,7 @@ function DetailModal(props: IDetailModalProps) {
                                     marginBottom: "12px",
                                 }}>
                                     <Box sx={{
-                                        backgroundImage: "url(/join_us/square@2x.png)",
+                                        backgroundImage: `url(${getImageUrl("/join_us/square@2x.png")})`,
                                         backgroundSize: "contain",
                                         marginRight: "8px",
                                         width: "7px",
@@ -165,7 +166,7 @@ function DetailModal(props: IDetailModalProps) {
                                     marginBottom: "12px",
                                 }}>
                                     <Box sx={{
-                                        backgroundImage: "url(/join_us/square@2x.png)",
+                                        backgroundImage: `url(${getImageUrl("/join_us/square@2x.png")})`,
                                         backgroundSize: "contain",
                                         marginRight: "8px",
                                         width: "7px",
@@ -194,7 +195,7 @@ function DetailModal(props: IDetailModalProps) {
                             marginBottom: "12px",
                         }}>
                             <Box sx={{
-                                backgroundImage: "url(/join_us/square@2x.png)",
+                                backgroundImage: `url(${getImageUrl("/join_us/square@2x.png")})`,
                                 backgroundSize: "contain",
                                 marginRight: "8px",
                                 width: "7px",
@@ -211,7 +212,7 @@ function DetailModal(props: IDetailModalProps) {
                     position: "absolute",
                     right: "32px",
                     bottom: 0,
-                    backgroundImage: "url(/join_us/joinus@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/join_us/joinus@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>

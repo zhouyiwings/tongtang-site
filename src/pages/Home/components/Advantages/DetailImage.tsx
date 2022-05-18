@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 import R from "../../../../resources/Namespace";
 
 interface IDetailImageProps {
@@ -26,7 +27,7 @@ function DetailImage(props: IDetailImageProps) {
                 },
             }}
         >
-            <img src={`/home/advantages/detail_view/detail${props.sectionNumber + 1}-${props.imageIndex}@2x.png`} />
+            <img src={getImageUrl(`/home/advantages/detail_view/detail${props.sectionNumber + 1}-${props.imageIndex}@2x.png`)} />
             <Box
                 sx={{
                     position: "absolute",

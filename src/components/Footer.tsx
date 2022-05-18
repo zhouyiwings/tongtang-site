@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { getImageUrl } from "../helpers/urlHelper";
 import R from "../resources/Namespace";
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
         <Box
             sx={{
                 width: "100%",
-                backgroundImage: "url(/footer/bg@2x.png)",
+                backgroundImage: `url(${getImageUrl("/footer/bg@2x.png")})`,
                 backgroundSize: "cover",
                 paddingTop: "80px",
                 paddingLeft: "140px",
@@ -82,7 +83,7 @@ function Footer() {
                             sx={{
                                 height: "196px",
                                 width: "196px",
-                                backgroundImage: "url(/home/qrcode@2x.png)",
+                                backgroundImage: `url(${getImageUrl("/home/qrcode@2x.png")})`,
                                 backgroundSize: "contain",
                                 marginBottom: "18px",
                             }}

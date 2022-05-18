@@ -1,6 +1,7 @@
 import { Box } from "@mui/system";
 import { useCallback } from "react";
 import TongtangButton from "../../../../components/Button";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 import R from "../../../../resources/Namespace";
 
 interface IAccordionTabProps {
@@ -30,7 +31,7 @@ function AccordionTab(props: IAccordionTabProps) {
                 overflow: "hidden",
                 position: "relative",
                 transition: "all 0.4s ease-in-out",
-                backgroundImage: `url(${props.backgroundImg})`,
+                backgroundImage: `url(${getImageUrl(props.backgroundImg)})`,
                 backgroundSize: "cover",
             }}
         >

@@ -4,6 +4,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import TongtangIconButton from "../../../components/IconButton";
 import {useState, useMemo} from "react";
 import R from "../../../resources/Namespace";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 const totalImages = 7;
 function Benefits() {
@@ -28,7 +29,7 @@ function Benefits() {
             paddingTop: "80px",
         }}>
             <Box sx={{
-                backgroundImage: "url(/join_us/benefit/title@2x.png)",
+                backgroundImage: `url(${getImageUrl("/join_us/benefit/title@2x.png")})`,
                 backgroundSize: "contain",
                 width: "326px",
                 height: "105px",
@@ -82,7 +83,7 @@ function Benefits() {
                                     },
                                 }}
                             >
-                                <img src={`/join_us/benefit/${index+1}.jpg`} />
+                                <img src={getImageUrl(`/join_us/benefit/${index+1}.jpg`)} />
                                 <Box sx={{
                                     position: "absolute",
                                     top: 0,

@@ -1,6 +1,7 @@
 import { Box, Button, Tab, Tabs, Theme } from "@mui/material";
 import { useCallback, useMemo } from "react";
 import { useHistory, useLocation, withRouter } from "react-router-dom";
+import { getImageUrl } from "../helpers/urlHelper";
 import R from "../resources/Namespace";
 
 function Header() {
@@ -63,7 +64,7 @@ function Header() {
                     width: "100%",
                 }
             }}>
-                <img src="/logo@2x.png" />
+                <img src={getImageUrl("/logo@2x.png")} />
             </Box>
             <Tabs
                 value={tabValue}
@@ -101,11 +102,12 @@ function Header() {
                 variant="contained"
                 onClick={onClickButton}
                 sx={{
-                    backgroundColor: (theme: Theme) => theme.palette.primary.light,
+                    backgroundColor: "#FF7005",
                     width: "190px",
                     height: "80px",
                     color: "#fff",
                     borderRadius: 0,
+                    fontSize: "20px",
                 }}>{R.strings.header.button.mall}</Button>
         </Box>
     )

@@ -7,6 +7,7 @@ import { Typography } from "@mui/material";
 import { useCallback, useState } from "react";
 import { useHistory } from "react-router-dom";
 import TongtangButton from "../../../../components/Button";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 interface IContent {
     title: string,
@@ -87,7 +88,7 @@ function Portfolio() {
                             width: "212px",
                         }}
                     >
-                        <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src="/home/portfolio/title@2x.png" />
+                        <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src={getImageUrl("/home/portfolio/title@2x.png")} />
                     </Box>
                     <Box
                         sx={{
@@ -178,7 +179,7 @@ function Portfolio() {
                                 width: "1252px",
                                 height: "710px",
                                 marginLeft: "-136px",
-                                backgroundImage: `url(${contents[currentIndex].url})`,
+                                backgroundImage: `url(${getImageUrl(contents[currentIndex].url)})`,
                                 backgroundSize: "contain",
                             }}
                         >

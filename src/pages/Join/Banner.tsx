@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../helpers/urlHelper";
 import R from "../../resources/Namespace";
 
 function Banner() {
@@ -10,7 +11,7 @@ function Banner() {
             height: "auto",
             position: "relative",
         }}>
-            <img style={{width: "100%", height: "100%"}} src="/join_us/banner@2x.png" />
+            <img style={{width: "100%", height: "100%"}} src={getImageUrl("/join_us/banner@2x.png")} />
             <Box sx={{
                 position: "absolute",
                 top: "46.6507177%",

@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 interface ISolarTermCardProps {
@@ -34,7 +35,7 @@ function SolarTermCard(props: ISolarTermCardProps) {
             <Box sx={{
                 width: "348px",
                 height: "619px",
-                backgroundImage: `url(${ns[`term${props.index + 1}`].url})`,
+                backgroundImage: `url(${getImageUrl(`${ns[`term${props.index + 1}`].url}`)})`,
                 marginTop: props.reverse ? 0 : "37px",
                 marginBottom: props.reverse ? "37px" : 0,
             }} />

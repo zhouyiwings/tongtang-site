@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import R from "../../../resources/Namespace";
 import SolarTermCard from "./Card";
 import { useCallback, useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 const terms = Array(24).fill(0);
 const MAX_WIDTH = 10944;
@@ -53,7 +54,7 @@ function SolarTerms() {
                 <Box sx={{
                     width: "690px",
                     height: "120px",
-                    backgroundImage: "url(/cases/solar_terms/title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/solar_terms/title@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>

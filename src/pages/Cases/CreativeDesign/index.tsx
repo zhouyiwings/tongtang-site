@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 function CreativeDesign() {
@@ -33,7 +34,7 @@ function CreativeDesign() {
                 <Box sx={{
                     width: "100%",
                     height: "100%",
-                    backgroundImage: "url(/cases/creative_design/main@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/creative_design/main@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>
@@ -50,7 +51,7 @@ function CreativeDesign() {
                 <Box sx={{
                     width: "289px",
                     height: "105px",
-                    backgroundImage: "url(/cases/creative_design/title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/creative_design/title@2x.png")})`,
                     backgroundSize: "contain",
                     marginBottom: "135px",
                     marginLeft: "auto",
@@ -64,7 +65,7 @@ function CreativeDesign() {
                 <Box sx={{
                     width: "184px",
                     height: "275px",
-                    backgroundImage: "url(/cases/creative_design/sub@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/creative_design/sub@2x.png")})`,
                     backgroundSize: "contain",
                     marginLeft: "auto",
                 }} />

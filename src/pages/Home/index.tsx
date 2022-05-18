@@ -10,6 +10,7 @@ import Advantages from "./components/Advantages";
 import Portfolio from "./components/Portfolio";
 import { useHistory, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { getImageUrl } from "../../helpers/urlHelper";
 
 function Home() {
     const location = useLocation();
@@ -51,7 +52,7 @@ function Home() {
                             maxWidth: "960px"
                         }
                     }}>
-                    <img src="./home/slogan@2x.png" />
+                    <img src={getImageUrl("/home/slogan@2x.png")} />
                 </Box>
                 <Box
                     display="flex"
@@ -75,7 +76,7 @@ function Home() {
                             maxWidth: "100%"
                         }
                     }}>
-                    <img src="./home/slogan2@2x.png" />
+                    <img src={getImageUrl("/home/slogan2@2x.png")} />
                 </Box>
             </Box>
             <BusinessScope />

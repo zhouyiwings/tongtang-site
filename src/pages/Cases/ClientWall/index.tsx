@@ -1,4 +1,5 @@
 import { Box } from "@mui/system";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 
 function ClientWall() {
@@ -19,7 +20,7 @@ function ClientWall() {
                 sx={{
                     height: "105px",
                     width: "246px",
-                    backgroundImage: "url(/cases/client_wall/title@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/client_wall/title@2x.png")})`,
                     backgroundSize: "contain",
                     marginBottom: "90px",
                 }}
@@ -28,7 +29,7 @@ function ClientWall() {
                 sx={{
                     height: "864px",
                     width: "1650px",
-                    backgroundImage: "url(/cases/client_wall/logo@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/client_wall/logo@2x.png")})`,
                     backgroundSize: "contain",
                 }}
             />

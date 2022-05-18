@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 import R from "../../../resources/Namespace";
 import TongtangButton from "../../../components/Button";
 import { useCallback } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 interface IContactUsModalProps {
     onClose: () => void;
@@ -76,7 +77,7 @@ function ContactUsModal(props: IContactUsModalProps) {
                     <Box sx={{
                         width: "154px",
                         height: "46px",
-                        backgroundImage: "url(/cases/contact_us/contact-method@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/contact_us/contact-method@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "50px",
                     }} />
@@ -124,14 +125,14 @@ function ContactUsModal(props: IContactUsModalProps) {
                     <Box sx={{
                         width: "100%",
                         height: "462px",
-                        backgroundImage: "url(/cases/contact_us/contact-banner@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/contact_us/contact-banner@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "65px",
                     }} />
                     <Box sx={{
                         width: "154px",
                         height: "46px",
-                        backgroundImage: "url(/cases/contact_us/tongtang-text@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/contact_us/tongtang-text@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "20px",
                         marginRight: "100px",

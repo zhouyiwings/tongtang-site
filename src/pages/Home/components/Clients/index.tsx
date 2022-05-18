@@ -2,6 +2,7 @@ import { Box } from "@mui/system";
 import { useCallback } from "react";
 import { useHistory } from "react-router-dom";
 import TongtangButton from "../../../../components/Button";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 import R from "../../../../resources/Namespace";
 
 import "./index.scss";
@@ -33,7 +34,7 @@ function Clients() {
                     height: "434px",
                 }}
             >
-                <img src="/home/clients/bg.png" />
+                <img src={getImageUrl("/home/clients/bg.png")} />
             </Box>
             <Box
                 display="flex"
@@ -52,7 +53,7 @@ function Clients() {
                         marginBottom: "38px",
                     }}
                 >
-                    <img src="/home/clients/title.png" />
+                    <img src={getImageUrl("/home/clients/title.png")} />
                 </Box>
                 <Box
                     display="flex"
@@ -64,16 +65,16 @@ function Clients() {
                     }}
                 >
                     <Box className="clientBox">
-                        <img src="/home/clients/kuaishou@2x.png" />
+                        <img src={getImageUrl("/home/clients/kuaishou@2x.png")} />
                     </Box>
                     <Box className="clientBox">
-                        <img src="/home/clients/bytedance@2x.png" />
+                        <img src={getImageUrl("/home/clients/bytedance@2x.png")} />
                     </Box>
                     <Box className="clientBox">
-                        <img src="/home/clients/xiaomi@2x.png" />
+                        <img src={getImageUrl("/home/clients/xiaomi@2x.png")} />
                     </Box>
                     <Box className="clientBox">
-                        <img src="/home/clients/yuxin@2x.png" />
+                        <img src={getImageUrl("/home/clients/yuxin@2x.png")} />
                     </Box>
                 </Box>
                 <Box sx={{

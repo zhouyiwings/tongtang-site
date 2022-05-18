@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
 import R from "../../../../resources/Namespace";
 import TongtangTimeline from "../Timeline";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 interface IBox3Props {
     closeBox: () => void;
@@ -78,7 +79,7 @@ function Box3(props: IBox3Props) {
                 }}>
                     <Box height="450px" />
                     <Box height="300px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box3/1@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box3/1@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -91,7 +92,7 @@ function Box3(props: IBox3Props) {
                 }}>
                     <Box height="240px" />
                     <Box height="510px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box3/2@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box3/2@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -103,12 +104,12 @@ function Box3(props: IBox3Props) {
                     zIndex: 1,
                 }}>
                     <Box height="418px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box3/3@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box3/3@2x.png")})`,
                         backgroundSize: "cover",
                         marginBottom: "32px",
                     }}/>
                     <Box height="300px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box3/4@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box3/4@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>
@@ -119,12 +120,12 @@ function Box3(props: IBox3Props) {
                     zIndex: 1,
                 }}>
                     <Box height="240px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box3/5@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box3/5@2x.png")})`,
                         backgroundSize: "cover",
                         marginBottom: "32px",
                     }}/>
                     <Box height="293px" sx={{
-                        backgroundImage: "url(/cases/whole_box/box3/6@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/whole_box/box3/6@2x.png")})`,
                         backgroundSize: "cover",
                     }}/>
                 </Box>

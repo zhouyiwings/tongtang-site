@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { getImageUrl } from "../../../../helpers/urlHelper";
 
 interface IArrivalBoxProps {
     width: string;
@@ -28,7 +29,7 @@ function ArrivalBox(props: IArrivalBoxProps) {
                 sx={{
                     height: "100%",
                     width: "100%",
-                    backgroundImage: `url(${props.background})`,
+                    backgroundImage: `url(${getImageUrl(props.background)})`,
                     backgroundSize: "contain",
                     backgroundPosition: "center",
                 }}

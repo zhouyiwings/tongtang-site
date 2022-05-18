@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 function Tab3Content() {
@@ -39,13 +40,13 @@ function Tab3Content() {
                     <Box sx={{
                         height: "100%",
                         width: "384px",
-                        backgroundImage: "url(/cases/culture_derivative/tab3/1@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/1@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                     <Box sx={{
                         height: "100%",
                         width: "384px",
-                        backgroundImage: "url(/cases/culture_derivative/tab3/2@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/2@2x.png")})`,
                         backgroundSize: "contain",
                     }} />
                 </Box>
@@ -62,7 +63,7 @@ function Tab3Content() {
                     position: "absolute",
                     top: 0,
                     left: 0,
-                    backgroundImage: "url(/cases/culture_derivative/tab3/3@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/3@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
@@ -71,7 +72,7 @@ function Tab3Content() {
                     position: "absolute",
                     top: "560px",
                     left: 0,
-                    backgroundImage: "url(/cases/culture_derivative/tab3/4@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/4@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
@@ -80,7 +81,7 @@ function Tab3Content() {
                     position: "absolute",
                     left: "384px",
                     top: 0,
-                    backgroundImage: "url(/cases/culture_derivative/tab3/5@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/5@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
@@ -89,7 +90,7 @@ function Tab3Content() {
                     position: "absolute",
                     left: "384px",
                     top: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab3/6@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/6@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
                 <Box sx={{
@@ -98,7 +99,7 @@ function Tab3Content() {
                     position: "absolute",
                     left: "768px",
                     top: "280px",
-                    backgroundImage: "url(/cases/culture_derivative/tab3/7@2x.png)",
+                    backgroundImage: `url(${getImageUrl("/cases/culture_derivative/tab3/7@2x.png")})`,
                     backgroundSize: "contain",
                 }} />
             </Box>

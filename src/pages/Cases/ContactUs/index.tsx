@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 import ContactUsModal from "./Modal";
 
@@ -24,7 +25,7 @@ function ContactUs() {
                     marginTop: "230px",
                     width: "1200px",
                     height: "152px",
-                    backgroundImage: isHovered ? "url(/cases/contact_us/main-hovered@2x.png)" : "url(/cases/contact_us/main@2x.png)",
+                    backgroundImage: isHovered ? `url(${getImageUrl("/cases/contact_us/main-hovered@2x.png")})` : `url(${getImageUrl("/cases/contact_us/main@2x.png")})`,
                     backgroundSize: "contain",
                     transition: "all 0.25s ease-in-out",
                 }}
@@ -34,7 +35,7 @@ function ContactUs() {
                     marginTop: "30px",
                     width: "594px",
                     height: "87px",
-                    backgroundImage: isHovered ? "url(/cases/contact_us/sub-hovered@2x.png)" : "url(/cases/contact_us/sub@2x.png)",
+                    backgroundImage: isHovered ? `url(${getImageUrl("/cases/contact_us/sub-hovered@2x.png")})` : `url(${getImageUrl("/cases/contact_us/sub@2x.png")})`,
                     backgroundSize: "contain",
                     transition: "all 0.25s ease-in-out",
                 }}

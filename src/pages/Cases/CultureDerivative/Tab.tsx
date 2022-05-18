@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { useCallback, useMemo } from "react";
+import { getImageUrl } from "../../../helpers/urlHelper";
 import R from "../../../resources/Namespace";
 
 interface ITabProps {
@@ -48,7 +49,7 @@ function Tab(props: ITabProps) {
             <Box sx={{
                 width: "46px",
                 height: "46px",
-                backgroundImage: isHovered ? `url(${ns[`tab${props.index + 1}`].icon_hovered})` : `url(${ns[`tab${props.index + 1}`].icon})`,
+                backgroundImage: isHovered ? `url(${getImageUrl(`${ns[`tab${props.index + 1}`].icon_hovered}`)})` : `url(${getImageUrl(`${ns[`tab${props.index + 1}`].icon}`)})`,
                 backgroundSize: "contain",
             }} />
             <Box

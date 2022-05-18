@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../helpers/urlHelper";
 import R from "../../resources/Namespace";
 
 function Qualifications() {
@@ -15,7 +16,7 @@ function Qualifications() {
             <Box sx={{
                 width: "422px",
                 height: "105px",
-                backgroundImage: "url(/about_us/qualification@2x.png)",
+                backgroundImage: `url(${getImageUrl("/about_us/qualification@2x.png")})`,
                 backgroundSize: "contain",
                 marginBottom: "70px",
             }} />
@@ -39,7 +40,7 @@ function Qualifications() {
                     <Box sx={{
                         width: "400px",
                         height: "284px",
-                        backgroundImage: "url(/about_us/cert1@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/about_us/cert1@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "32px",
                     }} />
@@ -61,7 +62,7 @@ function Qualifications() {
                     <Box sx={{
                         width: "400px",
                         height: "284px",
-                        backgroundImage: "url(/about_us/cert2@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/about_us/cert2@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "32px",
                     }} />
@@ -83,7 +84,7 @@ function Qualifications() {
                     <Box sx={{
                         width: "400px",
                         height: "284px",
-                        backgroundImage: "url(/about_us/cert3@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/about_us/cert3@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "32px",
                     }} />
@@ -105,7 +106,7 @@ function Qualifications() {
                     <Box sx={{
                         width: "400px",
                         height: "284px",
-                        backgroundImage: "url(/about_us/cert4@2x.png)",
+                        backgroundImage: `url(${getImageUrl("/about_us/cert4@2x.png")})`,
                         backgroundSize: "contain",
                         marginBottom: "32px",
                     }} />

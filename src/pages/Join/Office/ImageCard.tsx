@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import { getImageUrl } from "../../../helpers/urlHelper";
 
 interface IImageCardProps {
     width: string;
@@ -15,7 +16,7 @@ function ImageCard(props: IImageCardProps) {
                 position: "relative",
                 width: `${props.width}`,
                 height: `${props.height}`,
-                backgroundImage: `url(${props.url})`,
+                backgroundImage: `url(${getImageUrl(props.url)})`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 marginBottom: props.marginBottom,
