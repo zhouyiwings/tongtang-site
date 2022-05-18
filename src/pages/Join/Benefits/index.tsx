@@ -14,7 +14,7 @@ function Benefits() {
         return totalImages > 1 && currentImageIndex > 1;
     }, [currentImageIndex]);
     const showNextButton = useMemo(() => {
-        return totalImages > 1 && currentImageIndex < totalImages;
+        return totalImages > 1 && currentImageIndex < totalImages - 1;
     }, [currentImageIndex]);
     const arr = useMemo(() => Array.from(Array(totalImages)), [totalImages]);
 
@@ -53,6 +53,7 @@ function Benefits() {
                     variant="outlined"
                     opacity={showPrevButton ? 1 : 0}
                     marginRight="67px"
+                    pointerEvents={!showPrevButton ? "none" : undefined}
                     onClick={() => currentImageIndex > 1 && showPrevButton && setCurrentImageIndex(currentImageIndex - 1)}
                 />
                 <Box
@@ -103,6 +104,7 @@ function Benefits() {
                     icon={<ArrowForwardIosIcon />}
                     variant="outlined"
                     opacity={showNextButton ? 1 : 0}
+                    pointerEvents={!showNextButton ? "none" : undefined}
                     marginLeft="67px"
                     onClick={() => currentImageIndex < totalImages && showNextButton && setCurrentImageIndex(currentImageIndex + 1)}
                 />

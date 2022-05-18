@@ -7,6 +7,7 @@ interface ITongtangIconButtonProps {
     marginRight?: string;
     onClick: () => void;
     variant?: "outlined";
+    pointerEvents?: string;
 }
 
 function TongtangIconButton(props: ITongtangIconButtonProps) {
@@ -22,6 +23,7 @@ function TongtangIconButton(props: ITongtangIconButtonProps) {
                 color: props.variant === "outlined" ? "#2e3233" : "#8d8f90",
                 border: props.variant === "outlined" ? "1px solid #2e3233" : undefined,
                 opacity: props.opacity !== undefined ? props.opacity : 1,
+                pointerEvents: props.pointerEvents || "auto" as any,
                 
                 "& svg": {
                     fill: props.variant === "outlined" ? "#2e3233" : "#8d8f90",

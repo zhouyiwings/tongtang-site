@@ -36,7 +36,7 @@ function RecruitingCard(props: IRecruitingCardProps) {
                 right: 0,
                 top: "32px",
             }}>
-                <TongtangButton width="120px" height="36px" borderRadius="6px" label={R.strings.join_us.view_detail} onClick={() => props.onViewDetail(props.positionKey)} />
+                <TongtangButton borderWidth="1px" width="120px" height="36px" borderRadius="6px" label={R.strings.join_us.view_detail} onClick={() => props.onViewDetail(props.positionKey)} />
             </Box>
         </Box>
     )
