@@ -11,6 +11,7 @@ import { ABOUT_US, CASES, HOME, JOIN } from "./constants/urls";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Footer from "./components/Footer";
 import ScrollToTop from "./ScrollToTop";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 const history = createBrowserHistory();
 
@@ -34,6 +35,7 @@ function App() {
           <Route path={ABOUT_US} component={AboutUs} exact />
           <Route path={JOIN} component={Join} exact />
         </Switch>
+        <ScrollToTopButton />
       </Router>
     </ThemeProvider>
   );
