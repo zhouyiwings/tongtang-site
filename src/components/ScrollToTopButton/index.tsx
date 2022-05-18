@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { useCallback, useEffect, useState } from "react";
+import { getImageUrl } from "../../helpers/urlHelper";
 
 function ScrollToTopButton() {
     const [show, setShow] = useState(false);
@@ -29,7 +30,7 @@ function ScrollToTopButton() {
                 transition: "all 0.25s ease-in-out",
                 width: "60px",
                 height: "60px",
-                backgroundImage: `url(${("/back_to_top@2x.png")})`,
+                backgroundImage: `url(${getImageUrl("/back_to_top@2x.png")})`,
                 backgroundSize: "contain",
                 cursor: "pointer",
             }}
