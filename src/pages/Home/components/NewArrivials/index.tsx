@@ -94,6 +94,7 @@ function NewArrivals() {
                 width: "100vw",
                 height: "1000px",
                 boxSizing: "border-box",
+                paddingTop: "160px",
                 position: "relative",
                 backgroundColor: "#fff",
                 scrollSnapAlign: "start",
@@ -114,7 +115,6 @@ function NewArrivals() {
                 display="flex"
                 flexDirection="row"
                 sx={{
-                    marginTop: "160px",
                     height: "650px",
                 }}
             >
