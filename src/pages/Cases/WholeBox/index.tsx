@@ -45,8 +45,8 @@ function WholeBox() {
             >
                 <Box
                     sx={{
-                        height: "106px",
-                        width: "212px",
+                        height: "105px",
+                        width: "246px",
                         marginBottom: "50px",
                     }}
                 >

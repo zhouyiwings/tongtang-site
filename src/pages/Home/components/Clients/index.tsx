@@ -20,6 +20,7 @@ function Clients() {
                 width: "100%",
                 height: "520px",
                 position: "relative",
+                paddingTop: "96px",
             }}
         >
             <Box
@@ -85,7 +86,6 @@ function Clients() {
                 }}>
                     <TongtangButton
                         id="more_btn"
-                        opacity={0}
                         label={R.strings.common.more_plus}
                         onClick={onClickMore}
                     />

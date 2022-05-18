@@ -19,12 +19,12 @@ function ContentBox(props: IContentBoxProps) {
             alignItems={"center"}
             className="contentBox"
             sx={{
+                justifyContent: "center",
                 width: "304px",
                 height: "304px",
                 position: "relative",
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
-                paddingTop: `${props.secondaryText ? "82px" : "62px"}`,
                 backgroundColor: "#fff",
                 boxSizing: "border-box",
                 borderLeft: "1px solid #EDEDED",

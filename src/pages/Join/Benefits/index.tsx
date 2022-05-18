@@ -51,7 +51,7 @@ function Benefits() {
                     icon={<ArrowBackIosNewIcon />}
                     variant="outlined"
                     opacity={showPrevButton ? 1 : 0}
-                    marginRight="100px"
+                    marginRight="67px"
                     onClick={() => currentImageIndex > 1 && showPrevButton && setCurrentImageIndex(currentImageIndex - 1)}
                 />
                 <Box
@@ -61,7 +61,7 @@ function Benefits() {
                         flexDirection: "row",
                         alignItems: "center",
                         justifyContent: "center",
-                        width: "1380px",
+                        width: "1488px",
                         height: "699px",
                     }}
                 >
@@ -71,7 +71,7 @@ function Benefits() {
                                 sx={{
                                     position: "absolute",
                                     display: "flex",
-                                    width: currentImageIndex !== index ? "656" : "906",
+                                    width: currentImageIndex !== index ? "656px" : "906px",
                                     height: currentImageIndex !== index ? "430px" : "566px",
                                     transition: "all 0.5s ease-in-out",
                                     left: currentImageIndex > index ? 0 : (currentImageIndex < index ? "832px" : "291px"),
@@ -102,7 +102,7 @@ function Benefits() {
                     icon={<ArrowForwardIosIcon />}
                     variant="outlined"
                     opacity={showNextButton ? 1 : 0}
-                    marginLeft="100px"
+                    marginLeft="67px"
                     onClick={() => currentImageIndex < totalImages && showNextButton && setCurrentImageIndex(currentImageIndex + 1)}
                 />
             </Box>

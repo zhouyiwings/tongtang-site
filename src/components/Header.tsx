@@ -88,10 +88,10 @@ function Header() {
                 indicatorColor="primary"
                 textColor="primary"
             >
-                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_home} value="1" />
-                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_cases} value="2" />
-                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_us} value="3" />
-                <Tab disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_join} value="4" />
+                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_home} value="1" />
+                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_cases} value="2" />
+                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_us} value="3" />
+                <Tab sx={{fontSize: "20px", color: "#333333"}} disableRipple disableTouchRipple disableFocusRipple label={R.strings.header.tabs.label_join} value="4" />
             </Tabs>
             <Button
                 disableRipple

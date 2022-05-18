@@ -56,11 +56,21 @@ function Portfolio() {
                 height: "1000px",
                 alignItems: "center",
                 justifyContent: "center",
+                position: "relative",
             }}
         >
+            <Box sx={{
+                position: "absolute",
+                left: 0,
+                bottom: 0,
+                width: "100%",
+                height: "640px",
+                background: "#F5F5F5",
+            }} />
             <Box
                 sx={{
                     maxWidth: "1920px",
+                    zIndex: 2,
                 }}
             >
                 <Box

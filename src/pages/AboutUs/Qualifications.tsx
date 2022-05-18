@@ -105,7 +105,7 @@ function Qualifications() {
                     <Box sx={{
                         width: "400px",
                         height: "284px",
-                        backgroundImage: "url(/about_us/cert3@2x.png)",
+                        backgroundImage: "url(/about_us/cert4@2x.png)",
                         backgroundSize: "contain",
                         marginBottom: "32px",
                     }} />

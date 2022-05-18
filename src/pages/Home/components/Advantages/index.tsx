@@ -54,13 +54,14 @@ function Advantages() {
                 width: "100%",
                 height: "1000px",
                 padding: "100px 0",
+                paddingTop: "96px",
                 boxSizing: "border-box",
             }}
         >
             <Box
                 sx={{
-                    height: "106px",
-                    width: "212px",
+                    height: "105px",
+                    width: "256px",
                 }}>
                 <img style={{width: "100%", height: "100%", backgroundSize: "contain"}} src="/home/advantages/title@2x.png" />
             </Box>

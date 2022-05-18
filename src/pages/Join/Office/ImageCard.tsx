@@ -17,6 +17,7 @@ function ImageCard(props: IImageCardProps) {
                 height: `${props.height}`,
                 backgroundImage: `url(${props.url})`,
                 backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
                 marginBottom: props.marginBottom,
             }}
         >

@@ -107,7 +107,6 @@ function NewArrivals() {
                     width: "1476px",
                     height: "563px",
                     background: "#F5F5F5",
-                    opacity: 0,
                 }}
             />
             <Box
@@ -134,6 +133,8 @@ function NewArrivals() {
                 >
                     <Box
                         sx={{
+                            width: "252px",
+                            height: "105px",
                             marginBottom: "28px",
                         }}
                     >

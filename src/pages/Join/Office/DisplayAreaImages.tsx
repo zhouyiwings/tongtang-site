@@ -31,11 +31,11 @@ function DisplayAreaImages() {
             <Box sx={{
                 display: "flex",
                 flexDirection: "column",
-                flex: "0 0 976px",
+                flex: "0 0 880px",
                 marginLeft: "32px",
             }}>
                 <ImageCard
-                    width="976px"
+                    width="880px"
                     height="580px"
                     title={`${R.strings.join_us.office.gift_box}`}
                     url="/join_us/office/gift_box@2x.png"

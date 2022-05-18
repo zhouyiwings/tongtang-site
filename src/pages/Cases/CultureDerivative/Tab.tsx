@@ -55,12 +55,12 @@ function Tab(props: ITabProps) {
                 sx={{
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: "center",
+                    alignItems: "flex-start",
                     marginLeft: "63px",
                 }}
             >
-                <Typography color={isHovered ? "#fff" : "#333"} fontSize={20} fontWeight={500} lineHeight="29px">{ns[`tab${props.index + 1}`].title}</Typography>
-                <Typography color={isHovered ? "#fff" : "#333"} fontSize={14} fontWeight={400} lineHeight="20px">{ns[`tab${props.index + 1}`].sub_title}</Typography>
+                <Typography textAlign={"left"} color={isHovered ? "#fff" : "#333"} fontSize={20} fontWeight={500} lineHeight="29px">{ns[`tab${props.index + 1}`].title}</Typography>
+                <Typography textAlign={"left"} color={isHovered ? "#fff" : "#333"} fontSize={14} fontWeight={400} lineHeight="20px">{ns[`tab${props.index + 1}`].sub_title}</Typography>
             </Box>
         </Box>
     )
