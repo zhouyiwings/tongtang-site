@@ -32,7 +32,7 @@ function Office() {
                     width: "339px",
                     height: "105px",
                 }} />
-                <Typography fontSize={16} fontWeight={400} lineHeight="32px" color="#252525" marginLeft="567px">
+                <Typography fontSize={16} fontWeight={400} width="637px" lineHeight="32px" color="#252525" marginLeft="567px">
                     {R.strings.join_us.office.intro}
                 </Typography>
             </Box>

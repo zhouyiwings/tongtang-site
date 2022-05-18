@@ -3,12 +3,16 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/material";
 import R from "../../../resources/Namespace";
 import TongtangButton from "../../../components/Button";
+import { useCallback } from "react";
 
 interface IContactUsModalProps {
     onClose: () => void;
 }
 
 function ContactUsModal(props: IContactUsModalProps) {
+    const onClickMore = useCallback(() => {
+        window.open("https://tongtanggift.shop/");
+    }, []);
     return (
         <Box
             sx={{
@@ -134,7 +138,7 @@ function ContactUsModal(props: IContactUsModalProps) {
                         marginLeft: "auto",
                     }} />
                     <Box sx={{ marginLeft: "auto", marginRight: "100px"}}>
-                        <TongtangButton label={R.strings.cases.contact_us.visit} />
+                        <TongtangButton onClick={onClickMore} label={R.strings.cases.contact_us.visit} />
                     </Box>
                 </Box>
             </Box>

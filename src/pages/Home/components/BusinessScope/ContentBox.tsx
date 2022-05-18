@@ -28,7 +28,6 @@ function ContentBox(props: IContentBoxProps) {
                 backgroundColor: "#fff",
                 boxSizing: "border-box",
                 borderLeft: "1px solid #EDEDED",
-                opacity: 0,
             }}
         >
             <Box

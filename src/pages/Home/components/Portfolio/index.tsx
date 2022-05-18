@@ -5,6 +5,7 @@ import TongtangIconButton from "../../../../components/IconButton";
 import R from "../../../../resources/Namespace";
 import { Typography } from "@mui/material";
 import { useCallback, useState } from "react";
+import { useHistory } from "react-router-dom";
 import TongtangButton from "../../../../components/Button";
 
 interface IContent {
@@ -31,9 +32,10 @@ const contents: IContent[] = [
 ]
 function Portfolio() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const history = useHistory();
 
     const onClickMore = () => {
-
+        history.push("/cases/#whole_box_section");
     }
 
     const onClickNext = useCallback(() => {

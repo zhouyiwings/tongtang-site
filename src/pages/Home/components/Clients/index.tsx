@@ -1,9 +1,16 @@
 import { Box } from "@mui/system";
+import { useCallback } from "react";
+import { useHistory } from "react-router-dom";
+import TongtangButton from "../../../../components/Button";
+import R from "../../../../resources/Namespace";
 
 import "./index.scss";
 
 function Clients() {
-
+    const history = useHistory();
+    const onClickMore = useCallback(() => {
+        history.push("/cases/#client_wall");
+    }, [])
     return (
         <Box
             display="flex"
@@ -67,6 +74,21 @@ function Clients() {
                     <Box className="clientBox">
                         <img src="/home/clients/yuxin@2x.png" />
                     </Box>
+                </Box>
+                <Box sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "100%",
+                    marginTop: "50px",
+                }}>
+                    <TongtangButton
+                        id="more_btn"
+                        opacity={0}
+                        label={R.strings.common.more_plus}
+                        onClick={onClickMore}
+                    />
                 </Box>
             </Box>
         </Box>

@@ -21,7 +21,6 @@ function ArrivalBox(props: IArrivalBoxProps) {
                 height: props.height,
                 marginRight: "32px",
                 overflow: "hidden",
-                opacity: 0,
             }}
         >
             <Box

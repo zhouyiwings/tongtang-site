@@ -7,17 +7,21 @@ function Header() {
     const location = useLocation();
     const history = useHistory();
 
+    const onClickButton = useCallback(() => {
+        window.open("https://tongtanggift.shop/");
+    }, []);
+
     const tabValue = useMemo(() => {
-        switch(location.pathname) {
-            case "/":
-            case "/home":
-                return "1";
-            case "/cases":
-                return "2";
-            case "/about_us":
-                return "3";
-            case "/join":
-                return "4";
+        if (location.pathname.startsWith("/home")) {
+            return "1";
+        } else if (location.pathname.startsWith("/cases")) {
+            return "2";
+        } else if (location.pathname.startsWith("/about_us")) {
+            return "3";
+        } else if (location.pathname.startsWith("/join")) {
+            return "4";
+        } else if (location.pathname.startsWith("/")) {
+            return "1";
         }
     }, [location.pathname]);
 
@@ -95,6 +99,7 @@ function Header() {
                 disableFocusRipple
                 disableTouchRipple
                 variant="contained"
+                onClick={onClickButton}
                 sx={{
                     backgroundColor: (theme: Theme) => theme.palette.primary.light,
                     width: "190px",

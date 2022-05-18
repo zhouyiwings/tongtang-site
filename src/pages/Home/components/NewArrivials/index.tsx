@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import gsap from "gsap";
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Box } from "@mui/system";
 import ArrivalBox from "./ArrivalBox";
@@ -11,7 +11,13 @@ import TongtangButton from "../../../../components/Button";
 
 gsap.registerPlugin(ScrollTrigger);
 function NewArrivals() {
+    
+    const onClickMore = useCallback(() => {
+        window.open("https://tongtanggift.shop/");
+    }, []);
+    
     useEffect(() => {
+        /* 这部分是初步的动效，第一版本先不做，因为还没确定
         gsap.to("#box1", {
             opacity: 1,
             ease: "none",
@@ -78,6 +84,7 @@ function NewArrivals() {
                 end: "+=200"
             },
         })
+        */
     }, []);
     return (
         <Box
@@ -111,9 +118,9 @@ function NewArrivals() {
                     height: "650px",
                 }}
             >
-                <ArrivalBox id="box1" mainText="示例文字" secondaryText="核心成员拥有10年以上供应链管理经验；设计团队多次荣获国际国内设计大奖。" width="412px" height="650px" background="/home/new_arrivals/new_arrivals1@2x.png" />
-                <ArrivalBox id="box2" mainText="示例文字" secondaryText="核心成员拥有10年以上供应链管理经验；设计团队多次荣获国际国内设计大奖。" width="424px" height="436px" background="/home/new_arrivals/new_arrivals2@2x.png" />
-                <ArrivalBox id="box3" mainText="示例文字" secondaryText="核心成员拥有10年以上供应链管理经验；设计团队多次荣获国际国内设计大奖。" width="425px" height="544px" background="/home/new_arrivals/new_arrivals3@2x.png" />
+                <ArrivalBox id="box1" mainText="T恤" secondaryText="T恤（春日限定T恤）" width="412px" height="650px" background="/home/new_arrivals/new_arrivals1@2x.png" />
+                <ArrivalBox id="box2" mainText="外套" secondaryText="外套（春日限定外套）" width="424px" height="436px" background="/home/new_arrivals/new_arrivals2@2x.png" />
+                <ArrivalBox id="box3" mainText="卫衣" secondaryText="卫衣（春日限定卫衣）" width="425px" height="544px" background="/home/new_arrivals/new_arrivals3@2x.png" />
                 <Box
                     display="flex"
                     flexDirection="column"
@@ -137,15 +144,22 @@ function NewArrivals() {
                         sx={{
                             marginBottom: "40px",
                             width: "348px",
-                            opacity: 0,
                         }}
                     >
-                        <Typography fontSize={16} lineHeight="32px" color="#252525">{R.strings.new_arrivals.description}</Typography>
+                        <Typography fontSize={16} lineHeight="32px" color="#252525">{
+                            [
+                                R.strings.new_arrivals.description[0],
+                                <br />,
+                                R.strings.new_arrivals.description[1],
+                                <br />,
+                                R.strings.new_arrivals.description[2],
+                            ]
+                        }</Typography>
                     </Box>
                     <TongtangButton
                         id="more_btn"
-                        opacity={0}
                         label={R.strings.common.more_plus}
+                        onClick={onClickMore}
                     />
                 </Box>
             </Box>

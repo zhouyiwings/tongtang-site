@@ -10,6 +10,7 @@ import R from "../../../../resources/Namespace";
 gsap.registerPlugin(ScrollTrigger);
 function BusinessScope() {
     useEffect(() => {
+        /*这部分是初步的动效，第一版本先不做，因为还没确定
         gsap.to("#title1", {
             opacity: 1,
             ease: "none",
@@ -109,6 +110,7 @@ function BusinessScope() {
                 end: "+=200"
             },
         });
+        */
     }, []);
     return (
         <Box

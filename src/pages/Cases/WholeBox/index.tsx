@@ -22,6 +22,7 @@ function WholeBox() {
     }
     return (
         <Box
+            id="whole_box_section"
             sx={{
                 width: "100vw",
                 height: "1425px",

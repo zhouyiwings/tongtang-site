@@ -123,9 +123,6 @@ function Footer() {
                         <Typography fontSize={12} fontWeight={400} color="#fff" sx={{lineHeight: "18px", marginRight: "12px"}}>
                             {R.strings.footer.claim3}
                         </Typography>
-                        <Typography fontSize={12} fontWeight={400} color="#fff" sx={{lineHeight: "18px"}}>
-                            {R.strings.footer.claim4}
-                        </Typography>
                     </Box>
                     <Typography fontSize={12} fontWeight={400} color="#fff" sx={{lineHeight: "18px"}}>
                         {R.strings.footer.claim5}

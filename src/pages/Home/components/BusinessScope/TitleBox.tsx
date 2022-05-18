@@ -17,7 +17,6 @@ function TitleBox(props: ITitleBoxProps) {
                 backgroundImage: `url(${props.background})`,
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
-                opacity: 0,
             }}
         >
 

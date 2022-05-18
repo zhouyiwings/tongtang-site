@@ -4,6 +4,7 @@ import { Box } from "@mui/system";
 function ClientWall() {
     return (
         <Box
+            id="client_wall"
             sx={{
                 width: "100vw",
                 height: "1280px",
