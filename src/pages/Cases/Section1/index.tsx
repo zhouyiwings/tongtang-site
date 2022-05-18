@@ -29,6 +29,7 @@ function Section1(props: ISection1Props) {
                 flexDirection: "row",
                 minHeight: "1080px",
                 width: "100vw",
+                position: "relative",
             }}
         >
             <Box

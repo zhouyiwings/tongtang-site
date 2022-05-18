@@ -91,7 +91,7 @@ function NewArrivals() {
             id="newArrivals"
             sx={{
                 width: "100vw",
-                height: "100vh",
+                height: "1000px",
                 boxSizing: "border-box",
                 position: "relative",
                 backgroundColor: "#fff",

@@ -52,7 +52,7 @@ function Advantages() {
             alignItems="center"
             sx={{
                 width: "100%",
-                height: "100vh",
+                height: "1000px",
                 padding: "100px 0",
                 boxSizing: "border-box",
             }}
