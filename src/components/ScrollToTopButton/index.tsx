@@ -33,6 +33,7 @@ function ScrollToTopButton() {
                 backgroundImage: `url(${getImageUrl("/back_to_top@2x.png")})`,
                 backgroundSize: "contain",
                 cursor: "pointer",
+                zIndex: 10000,
             }}
         />
     )
