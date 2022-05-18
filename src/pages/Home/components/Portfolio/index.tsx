@@ -112,7 +112,9 @@ function Portfolio() {
                                     width: "804px",
                                     background: "#fff",
                                     boxShadow: "0px 16px 27px -17px rgba(0, 0, 0, 0.14)",
-                                    padding: "70px 90px",
+                                    paddingLeft: "90px",
+                                    paddingRight: "90px",
+                                    justifyContent: "center",
                                     marginTop: "61px",
                                 }}
                             >
@@ -121,7 +123,7 @@ function Portfolio() {
                                     sx={{
                                         display: "flex",
                                         flexDirection: "row",
-                                        height: "128px",
+                                        height: "auto",
                                         width: "659px",
                                         marginTop: "20px",
                                     }}
@@ -141,7 +143,7 @@ function Portfolio() {
                                     </Typography>
                                 </Box>
                                 <Box sx={{
-                                    marginTop: "52px",
+                                    marginTop: "40px",
                                     marginLeft: "51px",
                                 }}>
                                     <TongtangButton
