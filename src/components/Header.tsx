@@ -63,10 +63,18 @@ function Header() {
             zIndex: 9999,
         }}>
             <Box display="flex" flexDirection="row" sx={{
+                position: "absolute",
+                left: 0,
+                top: 0,
                 height: "80px",
                 width: "calc(100vw - 190px)",
                 background: "#fff",
                 opacity: 0.8,
+            }} />
+            <Box display="flex" flexDirection="row" sx={{
+                height: "80px",
+                width: "calc(100vw - 190px)",
+                zIndex: 2,
             }}>
                 <Box sx={{
                     width: "136px",
