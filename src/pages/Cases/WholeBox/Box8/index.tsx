@@ -43,8 +43,8 @@ function Box8(props: IBox8Props) {
                     position: "absolute",
                     width: "60px",
                     height: "60px",
-                    right: "12px",
-                    top: "12px",
+                    right: "18px",
+                    top: "6px",
                     color: "#afafaf",
                 }}
             >
