@@ -4,6 +4,7 @@
 #static_animation {
     width: 1920px;
     max-width: 100%;
+    margin-top: 80px;
     z-index: 10;
 }
 #slogan img {
@@ -14,8 +15,8 @@
     z-index: -1;
     opacity: 0;
     width: 1920px;
+    height: 940px;
     max-width: 100%;
-    background-image: url(/resources/animation2_imgs/pictures.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 50%;

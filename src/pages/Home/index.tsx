@@ -31,9 +31,11 @@ function Home() {
                 id="section1"
                 display="flex" flexDirection="column"
                 sx={{
+                    position: "relative",
+                    marginTop: "80px",
                     width: "100%",
                     flex: "0 0 auto",
-                    height: "100vh",
+                    height: "1000px",
                     scrollSnapAlign: "start",
                 }}>
                 <Box
@@ -43,7 +45,8 @@ function Home() {
                     justifyContent="center"
                     id="slogan"
                     sx={{
-                        marginTop: "250px",
+                        position: "absolute",
+                        top: "250px",
                         height: "170px",
                         width: "100%",
                         zIndex: 9999,
@@ -61,16 +64,15 @@ function Home() {
                     justifyContent="center"
                     id="slogan2"
                     sx={{
-                        position: "relative",
+                        position: "absolute",
                         height: "340px",
                         width: "1324px",
                         maxWidth: "100%",
                         zIndex: 9999,
                         opacity: 0,
-                        bottom: "90px",
+                        top: "1500px",
                         alignSelf: "center",
                         justifySelf: "center",
-                        top: "-200px",
                         "& img": {
                             height: "100%",
                             maxWidth: "100%"
@@ -78,6 +80,7 @@ function Home() {
                     }}>
                     <img src={getImageUrl("/home/slogan2@2x.png")} />
                 </Box>
+                <Animation1 />
             </Box>
             <BusinessScope />
             <NewArrivals />
