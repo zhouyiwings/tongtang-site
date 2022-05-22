@@ -112,9 +112,10 @@ function Portfolio() {
                                     width: "804px",
                                     background: "#fff",
                                     boxShadow: "0px 16px 27px -17px rgba(0, 0, 0, 0.14)",
+                                    paddingTop: "70px",
                                     paddingLeft: "90px",
                                     paddingRight: "90px",
-                                    justifyContent: "center",
+                                    justifyContent: "flex-start",
                                     marginTop: "61px",
                                 }}
                             >
