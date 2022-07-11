@@ -54,7 +54,7 @@ function Header() {
     return (
         <Box display="flex" flexDirection="row" sx={{
             height: "80px",
-            width: "100vw",
+            width: "100%",
             position: "fixed",
             top: show ? 0 : "-80px",
             opacity: show ? 1 : 0,
@@ -67,13 +67,13 @@ function Header() {
                 left: 0,
                 top: 0,
                 height: "80px",
-                width: "calc(100vw - 190px)",
+                width: "calc(100% - 190px)",
                 background: "#fff",
                 opacity: 0.8,
             }} />
             <Box display="flex" flexDirection="row" sx={{
                 height: "80px",
-                width: "calc(100vw - 190px)",
+                width: "calc(100% - 190px)",
                 zIndex: 2,
             }}>
                 <Box sx={{

@@ -70,7 +70,7 @@ function Portfolio() {
             }} />
             <Box
                 sx={{
-                    maxWidth: "1920px",
+                    width: "100%",
                     zIndex: 2,
                 }}
             >

@@ -11,7 +11,7 @@ function ContactUs() {
     return (
         <Box
             sx={{
-                width: "100vw",
+                width: "100%",
                 height: "950px",
                 background: isHovered ? "#fff" : "#FF7005",
                 display: "flex",

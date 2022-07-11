@@ -15,6 +15,7 @@ function TongtangIconButton(props: ITongtangIconButtonProps) {
         <IconButton
             onClick={props.onClick}
             sx={{
+                zIndex:"99",
                 width: "48px",
                 height: "48px",
                 marginLeft: props.marginLeft || "0px",

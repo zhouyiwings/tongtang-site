@@ -37,6 +37,7 @@ function SolarTerms() {
                 alignItems: "center",
                 width: "100%",
                 height: "1091px",
+                overflow:"hidden"
             }}
         >
             <Box sx={{
@@ -68,6 +69,7 @@ function SolarTerms() {
                     marginLeft: `${left}px`,
                     transition: "all 0.5s ease-in-out",
                     alignSelf: "flex-start",
+                    overflow:"hidden"
                 }}
             >
                 {terms.map((_, index) => {

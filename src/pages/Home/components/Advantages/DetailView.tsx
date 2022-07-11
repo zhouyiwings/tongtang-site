@@ -6,6 +6,7 @@ import { Box } from "@mui/system";
 import { useMemo, useState } from "react";
 import DetailImage from "./DetailImage";
 import TongtangIconButton from "../../../../components/IconButton";
+import zIndex from "@mui/material/styles/zIndex";
 
 interface IDetailViewProps {
     show: boolean;
@@ -34,8 +35,8 @@ function DetailView(props: IDetailViewProps) {
     return (
         <Box sx={{
             position: "fixed",
-            width: "100vw",
-            height: "100vh",
+            width: "100%",
+            height: "100%",
             left: 0,
             top: 0,
             zIndex: 9999,
@@ -65,8 +66,8 @@ function DetailView(props: IDetailViewProps) {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
-                    width: "1628px",
-                    height: "699px",
+                    width: "100%",
+                    height: "100%",
                 }}>
                     <TongtangIconButton
                         icon={<ArrowBackIosNewIcon />}

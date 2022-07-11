@@ -29,7 +29,7 @@ function Section1(props: ISection1Props) {
                 display: "flex",
                 flexDirection: "row",
                 minHeight: "1080px",
-                width: "100vw",
+                width: "100%",
                 position: "relative",
             }}
         >

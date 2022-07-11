@@ -91,7 +91,7 @@ function NewArrivals() {
         <Box
             id="newArrivals"
             sx={{
-                width: "100vw",
+                width: "100%",
                 height: "1000px",
                 boxSizing: "border-box",
                 paddingTop: "160px",

@@ -23,7 +23,7 @@ function Qualifications() {
             <Box sx={{
                 display: "flex",
                 flexDirection: "row",
-                width: "1792px",
+                width: "100%",
                 height: "410px",
             }}>
                 <Box sx={{

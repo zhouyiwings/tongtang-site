@@ -9,7 +9,7 @@ function CreativeDesign() {
                 display: "flex",
                 flexDirection: "row-reverse",
                 position: "relative",
-                width: "100vw",
+                width: "100%",
                 height: "1000px",
                 paddingTop: "80px",
                 paddingBottom: "128px",

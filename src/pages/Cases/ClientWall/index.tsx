@@ -7,7 +7,7 @@ function ClientWall() {
         <Box
             id="client_wall"
             sx={{
-                width: "100vw",
+                width: "100%",
                 height: "1280px",
                 display: "flex",
                 flexDirection: "column",

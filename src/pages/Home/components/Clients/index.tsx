@@ -42,7 +42,6 @@ function Clients() {
                 alignItems="center"
                 sx={{
                     minWidth: "1640",
-                    maxWidth: "100%",
                     height: "520px",
                     zIndex: 10,
                 }}

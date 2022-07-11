@@ -25,7 +25,7 @@ function WholeBox() {
         <Box
             id="whole_box_section"
             sx={{
-                width: "100vw",
+                width: "100%",
                 height: "1425px",
                 padding: "0 64px",
                 paddingTop: "96px",
