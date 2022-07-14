@@ -48,6 +48,7 @@ function CultureDerivative() {
             </Box>
             <Box
                 sx={{
+                    width:"100%",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

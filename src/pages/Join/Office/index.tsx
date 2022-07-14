@@ -18,8 +18,8 @@ function Office() {
             height: "993px",
             background: "#fff",
             paddingTop: "143px",
-            paddingLeft: "73px",
-            paddingRight: "64",
+            paddingLeft: "64px",
+            paddingRight: "64px",
         }}>
             <Box sx={{
                 display: "flex",

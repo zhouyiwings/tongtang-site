@@ -29,6 +29,7 @@ function Qualifications() {
                 <Box sx={{
                     width: "424px",
                     height: "410px",
+                    marginLeft:"64px",
                     marginRight: "32px",
                     background: "#fff",
                     paddingTop: "32px",
@@ -95,7 +96,7 @@ function Qualifications() {
                 <Box sx={{
                     width: "424px",
                     height: "410px",
-                    marginRight: "32px",
+                    marginRight: "64px",
                     background: "#fff",
                     paddingTop: "32px",
                     display: "flex",
