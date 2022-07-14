@@ -2,39 +2,14 @@ import { Box } from "@mui/material";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useCallback, useEffect, useRef } from "react";
+import { scrollingAnimationFrameCount, scrollingAnimationImages, staticAnimationFrameCount, staticAnimationImages } from "../../../components/GlobalImageLoader/images";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const scrollingAnimationFrameCount = 79;
-const scrollingAnimationOffset = 1920;
-const staticAnimationFrameCount = 120;
-const currentStaticAnimationFrame = (index: number) => (
-    `/animation1_imgs/1_00${index < 10 ? `00${index}` : (index < 100 ? `0${index}` : index)}.jpg`
-);
-const currentScrollingAnimationFrame = (index: number) => (
-    `/animation2_imgs/1_000${index < 10 ? `0${index}` : index}.jpg`
-);
-
-const staticAnimationImages: any[] = [];
 const staticAnimation = {
     frame: 0
 };
-
-for (let i = 1; i <= staticAnimationFrameCount; i++) {
-    const img = new Image();
-    img.src = currentStaticAnimationFrame(i);
-    staticAnimationImages.push(img);
-}
-
-const scrollingAnimationImages: any[] = [];
 const scrollingAnimation = {
     frame: 0,
-}
-
-for (let i = 1; i <= scrollingAnimationFrameCount; i++) {
-    const img = new Image();
-    img.src = currentScrollingAnimationFrame(i);
-    scrollingAnimationImages.push(img);
 }
 
 function render() {
@@ -118,24 +93,24 @@ function Animation() {
     }, []);
 
     useEffect(() => {
-        gsap.to("#slogan img", {
-            top: "-200px",
+        gsap.to("#slogan", {
+            top: "50px",
             opacity: 0,
             scrollTrigger: {
                 scroller: "body",
                 trigger: "#section1",
                 start: "top top",
-                end: () => window.innerHeight,
+                end: () => "350px",
                 scrub: true,
             },
         });
         gsap.to("#slogan2", {
-            top: "-600px",
+            top: "600px",
             opacity: 1,
             scrollTrigger: {
                 scroller: "body",
                 trigger: "#section1",
-                start: "top top",
+                start: "top 50px",
                 end: () => window.innerHeight,
                 scrub: true,
             },
@@ -152,6 +127,7 @@ function Animation() {
                 flexDirection: "column",
                 justifyContent: "center",
                 position: "relative",
+                paddingTop: "300px",
             }}
         >
             <canvas id="static_animation" />
